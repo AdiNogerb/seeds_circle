@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/ressources/idées de logo/logoo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#"><img src="./../public/assets/img/logoo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -46,12 +46,39 @@
     <!-- ######################################## Fin Header ######################################## -->
 
     <!-- ######################################## Main ######################################## -->
-    <main class="container d-flex justify-content-center">
+    <main class="container d-flex flex-column justify-content-center">
         <!-- DIV TITLE -->
-        <div class="row">
+        <div class="row mt-5">
             <h2 class="amatic text-grey text-center col-12">Le 13 Mars 2024 :</h2>
             <h1 class="amatic text-grey text-center col-12">Présentation du dossier de conception</h1>
         </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./../public/assets/img/pexels-christina-morillo-1181396.jpg" class="d-block w-100" alt="réunion">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
     <!-- ######################################## Fin Main ######################################## -->
 
@@ -60,6 +87,6 @@
     </footer>
     <!-- ######################################## Fin Footer ######################################## -->
     
-    <script src="lib\bootstrap\bootstrap.bundle.min.js"></script>
+    <script src="./../lib/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
