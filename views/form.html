@@ -17,11 +17,13 @@
 
     </header>
     <main>
-        <div class="container-fluid">
-            <div class="container back-pale">
-                <div class="deja-inscrit back-light d-flex justify-content-center">
+        <div class="container-fluid back-light m">
+            <div class="container back-pale m-4">
+                <div class="deja-inscrit d-flex justify-content-center">
                     <form action="">
-                        <h1>Déjà inscrit ?</h1>
+                        <div class="d-flex justify-content-center amatic-bold">
+                            <h1>Déjà inscrit ?</h1>
+                        </div>
                         <div class="form-floating mb-3">
                             <label for="floatingInput">Addresse mail* : </label><br>
                             <input type="email" class="form-control border-dark" id="floatingInput"
@@ -34,10 +36,56 @@
                         </div>
                         <p>*champs obligatoire</p>
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btn back-green">VALIDER</button>
+                            <button type="button"
+                                class="btn amatic-bold back-green rounded-pill px-5 m-4">VALIDER</button>
                         </div>
                     </form>
                 </div>
+            </div>
+            <div class="container back-pale m-4">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="validationServer01" class="form-label">Nom* : </label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationServer02" class="form-label">Prénom : </label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationServerUsername" class="form-label">Addresse mail* : </label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                            <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                                aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3s">
+                        <label for="floatingPassword">Mot de passe* : </label><br>
+                        <input type="password" class="form-control border-dark" id="floatingPassword"
+                            placeholder="motdepasse">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationServer05" class="form-label">Téléphone</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer05"
+                            aria-describedby="validationServer05Feedback" required>
+                        <div id="validationServer05Feedback" class="invalid-feedback">
+                            Entrez un numéro de téléphone valide.
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn amatic-bold back-green rounded-pill px-5 m-4">VALIDER</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
