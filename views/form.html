@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg back-pale amatic-bold border-bottom border-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/ressources/idées de logo/logoo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#"><img src="../public/assets/img/logoo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
         </nav>
     </header>
     <main>
-        <div class="container-fluid back-light m">
+        <div class="container-fluid back-light m-0">
             <div class="container back-pale m-4">
                 <div class="deja-inscrit d-flex justify-content-center">
                     <form action="">
@@ -72,43 +72,47 @@
             </div>
             <div class="container back-pale m-4">
                 <form class="row g-3">
-                    <div class="col-md-4">
+                    <div class="">
                         <label for="validationServer01" class="form-label">Nom* : </label>
                         <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
                         <div class="valid-feedback">
-                            Looks good!
+                            C'est bon!
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="">
                         <label for="validationServer02" class="form-label">Prénom : </label>
                         <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
                         <div class="valid-feedback">
-                            Looks good!
+                            C'est bon!
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <label for="validationServerUsername" class="form-label">Addresse mail* : </label>
+                    <div class="">
+                        <label for="validationServerUsername" class="form-label">Adresse mail* : </label>
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend3">@</span>
                             <input type="text" class="form-control is-invalid" id="validationServerUsername"
                                 aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                             <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                                Please choose a username.
+                                Merci de choisir une adresse mail valide.
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3s">
+                    <div class="">
                         <label for="floatingPassword">Mot de passe* : </label><br>
                         <input type="password" class="form-control border-dark" id="floatingPassword"
                             placeholder="motdepasse">
                     </div>
-                    <div class="col-md-3">
-                        <label for="validationServer05" class="form-label">Téléphone</label>
+                    <div class="">
+                        <label for="validationServer05" class="form-label">Téléphone : </label>
                         <input type="text" class="form-control is-invalid" id="validationServer05"
                             aria-describedby="validationServer05Feedback" required>
                         <div id="validationServer05Feedback" class="invalid-feedback">
                             Entrez un numéro de téléphone valide.
                         </div>
+                    </div>
+                    <div>
+                        <label for="formFileLg" class="d-flex justify-content-center">Photo de profil : </label>
+                        <input class="form-control form-control-lg" id="formFileLg" type="file">
                     </div>
                     <div class="d-flex justify-content-center">
                         <button type="button" class="btn amatic-bold back-green rounded-pill px-5 m-4">VALIDER</button>
