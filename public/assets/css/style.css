@@ -1,13 +1,72 @@
-.paleGreen{
-    background-color: #CDD9A0 ;
+.back-grey{
+    background-color: #F2F2F2;
 }
 
-.darkGreen-text{
-    color: #075942;
+.back-pale{
+    background-color: #CDD9A0;
 }
 
-.amatic-sc-regular {
+.back-light{
+    background-color: #93A64E;
+}
+
+.back-green{
+    background-color: #8CA62D;
+}
+
+.back-dark{
+    background-color: #075942;
+}
+
+.amatic{
     font-family: "Amatic SC", sans-serif;
     font-weight: 400;
+    font-style: normal;   
+}
+
+.amatic-bold{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
     font-style: normal;
+}
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-bold{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-italic{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.text-grey{
+    color: #F2F2F2;
+}
+
+.text-pale{
+    color: #CDD9A0;
+}
+
+.text-light{
+    color: #93A64E;
+}
+
+.text-green{
+    color: #8CA62D;
+}
+
+.text-dark{
+    color: #075942;
 }
