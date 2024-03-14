@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg back-pale amatic-bold border-bottom border-dark">
+        <nav class="navbar navbar-expand-lg back-pale amatic-bold border-bottom border-dark mb-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="../public/assets/img/logoo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -40,26 +40,25 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </header>
     <main>
-        <div class="container-fluid back-light m-0">
-            <div class="container back-pale m-4">
-                <div class="deja-inscrit d-flex justify-content-center">
+        <div class="container-fluid back-light mt-0 pt-5 pb-5">
+            <div class="container back-pale rounded">
+                <div class="registered d-flex justify-content-center">
                     <form action="">
-                        <div class="d-flex justify-content-center amatic-bold">
+                        <div class="d-flex justify-content-center amatic-bold pt-4">
                             <h1>Déjà inscrit ?</h1>
                         </div>
                         <div class="form-floating mb-3">
-                            <label for="floatingInput">Addresse mail* : </label><br>
+                            <label for="floatingInput">Adresse mail* : </label><br>
                             <input type="email" class="form-control border-dark" id="floatingInput"
                                 placeholder="name@example.com">
                         </div>
                         <div class="form-floating">
                             <label for="floatingPassword">Mot de passe* : </label><br>
-                            <input type="password" class="form-control border-dark" id="floatingPassword"
+                            <input type="password" class="form-control border-dark mb-3" id="floatingPassword"
                                 placeholder="motdepasse">
                         </div>
                         <p>*champs obligatoire</p>
@@ -70,15 +69,15 @@
                     </form>
                 </div>
             </div>
-            <div class="container back-pale m-4">
-                <form class="row g-3">
-                    <div class="">
-                        <label for="validationServer01" class="form-label">Nom* : </label>
-                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-                        <div class="valid-feedback">
-                            C'est bon!
-                        </div>
+            <div class="container back-pale mt-5 pb-2 rounded">
+                <form class="">
+                    <div class="d-flex justify-content-center amatic-bold pt-4">
+                        <h1>Formulaire</h1>
                     </div>
+                    <label for="validationServer01" class="form-label">Nom* : </label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                    <div class="valid-feedback">
+                        C'est bon!</div>
                     <div class="">
                         <label for="validationServer02" class="form-label">Prénom : </label>
                         <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
@@ -110,10 +109,11 @@
                             Entrez un numéro de téléphone valide.
                         </div>
                     </div>
-                    <div>
+                    <div class="image pb-5">
                         <label for="formFileLg" class="d-flex justify-content-center">Photo de profil : </label>
                         <input class="form-control form-control-lg" id="formFileLg" type="file">
                     </div>
+                    <p>*champs obligatoire</p>
                     <div class="d-flex justify-content-center">
                         <button type="button" class="btn amatic-bold back-green rounded-pill px-5 m-4">VALIDER</button>
                     </div>
