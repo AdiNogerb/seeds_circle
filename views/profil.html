@@ -50,11 +50,11 @@
                     <!-- ROW pour profil -->
                     <div class="row back-light rounded-bottom-4">
                         <!-- IMG PROFIL  -->
-                        <div class="col-5 my-3 py-2 my-lg-1 ps-lg-4 text-center">
-                            <img class="rounded-circle" id="profilPicture" src="./../public/assets/img/personna-Jane-Doe.png" alt="Doe Jane">
+                        <div class="col-4 ms-4 my-3 py-2 my-lg-1 ps-lg-4 text-center">
+                            <img class="img-thumbnail rounded-circle p-0 border-0" src="./../public/assets/img/personna-Jane-Doe.png" alt="Doe Jane">
                         </div>
                         <!-- NAME PROFIL  -->
-                        <div class="col-7 d-flex align-items-center justify-content-lg-around text-center text-light">
+                        <div class="col-7 d-flex align-items-center justify-content-sm-around text-center text-light">
                             <div class="back-dark rounded-pill rounded-lg" id="profilName">
                                 DOE Jane
                             </div>
@@ -66,7 +66,7 @@
                         <!-- COL pour les boutons -->
                         <div class="col-12 my-4 d-flex justify-content-around amatic-bold">
                             <button class="p-1 px-3 back-green rounded-pill">
-                            + Produit
+                                + Produit
                             </button>
                             <button class="p-1 px-3 back-green rounded-pill">
                                 + Besoin
@@ -80,27 +80,36 @@
                             </p>
                         </div>
                         <!-- COL BESOINS -->
-                        <div class="col-12 bg-warning">
+                        <div class="col-12">
                             <div class="row">
                                 <!-- 1ER BESOIN -->
-                                <div class="col-6 text-center bg-danger">
-                                    <h3>Besoins</h3>
+                                <div class="col-6 text-center mt-2 text-light">
+                                    <h3>Besoin</h3>
                                     <p>
                                         Graines de tournesol
                                     </p>
                                 </div>
+                                <!-- 1ERE IMG -->
                                 <div class="col-6">
-                                    <img class="needPicture" src="../public/assets/img/sunflower-seeds.jpg" alt="Image Besoin graines tournesol">
+                                    <div>
+                                        <img class="img-fluid my-2 rounded" src="../public/assets/img/sunflower-seeds.jpg" alt="Image Besoin graines tournesol">
+                                    </div>
                                 </div>
+                            </div>
+                            <hr>
+                            <div class="row">
                                 <!-- 2EME BESOIN -->
-                                <div class="col-6 text-center bg-primary">
-                                    <h3>Besoins</h3>
+                                <div class="col-6 text-center mt-2 text-light">
+                                    <h3>Besoin</h3>
                                     <p>
                                         Fraises
                                     </p>
                                 </div>
+                                <!-- 2EME IMG -->
                                 <div class="col-6">
-                                    <img class="needPicture" src="../public/assets/img/fresh-strawberries-wooden-table.jpg" alt="Image Besoin fraises fraiches sur table en bois">
+                                    <div>
+                                        <img class="img-fluid my-2 rounded" src="../public/assets/img/fresh-strawberries-wooden-table.jpg" alt="Image Besoin fraises fraiches sur table en bois">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +120,37 @@
                 <!-- fin côté gauche dekstop -->
                 <!-- côté droit dekstop -->
                 <div class="col-12 col-lg-7 bg-danger">
-                    Products
+                    <div class="row">
+                        <!-- 1ER PRODUIT -->
+                        <div class="col-6 text-center mt-2 text-light">
+                            <h3>Produit</h3>
+                            <p>
+                                Graines de tournesol
+                            </p>
+                        </div>
+                        <!-- 1ERE IMG -->
+                        <div class="col-6">
+                            <div>
+                                <img class="img-fluid my-2 rounded" src="../public/assets/img/sunflower-seeds.jpg" alt="Image Besoin graines tournesol">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- 2EME PRODUIT -->
+                        <div class="col-6 text-center mt-2 text-light">
+                            <h3>Produit</h3>
+                            <p>
+                                Fraises
+                            </p>
+                        </div>
+                        <!-- 2EME IMG -->
+                        <div class="col-6">
+                            <div>
+                                <img class="img-fluid my-2 rounded" src="../public/assets/img/fresh-strawberries-wooden-table.jpg" alt="Image Besoin fraises fraiches sur table en bois">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- fin côté droit dekstop -->
             </div>

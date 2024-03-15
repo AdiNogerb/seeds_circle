@@ -84,15 +84,9 @@
     .carousel-item {
         height: 400px;
     }
-    #profilPicture{
-        height: 8rem;
-    }
     #profilName{
         width: 19rem;
         height: 2rem;
-    }
-    .needPicture{
-        height: 7rem;
     }
 }
 @media screen and (max-width: 768px){
@@ -107,14 +101,8 @@
 }
 
 @media screen and (min-width: 992px) {
-    #profilPicture{
-        height: 10rem;
-    }
     #profilName{
         width: 12rem;
-    }
-    .needPicture{
-        height: 10rem;
     }
 }
 
