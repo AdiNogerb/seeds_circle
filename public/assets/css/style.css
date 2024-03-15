@@ -84,6 +84,12 @@
     .carousel-item {
         height: 400px;
     }
+    #profilPicture{
+        height: 10rem;
+    }
+    #profilName{
+        width: 19rem;
+    }
 }
 @media screen and (max-width: 768px){
     .carousel-item {
@@ -93,6 +99,15 @@
 @media screen and (max-width: 576px){
     .carousel-item {
         height: 200px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #profilPicture{
+        height: 11rem;
+    }
+    #profilName{
+        width: 14rem;
     }
 }
 
