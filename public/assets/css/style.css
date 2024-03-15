@@ -1,78 +1,80 @@
 /* ################################### BACKGROUND COLOR ################################### */
-.back-grey{
+.back-grey {
     background-color: #F2F2F2;
 }
 
-.back-pale{
+.back-pale {
     background-color: #CDD9A0;
 }
 
-.back-light{
+.back-light {
     background-color: #93A64E;
 }
 
-.back-green{
+.back-green {
     background-color: #8CA62D;
 }
 
-.back-dark{
+.back-dark {
     background-color: #075942;
 }
+
 /* ################################### END BACKGROUND COLOR ################################### */
 
 /* ################################### FONT STYLE ################################### */
-.amatic{
+.amatic {
     font-family: "Amatic SC", sans-serif;
     font-weight: 400;
-    font-style: normal;   
+    font-style: normal;
 }
 
-.amatic-bold{
+.amatic-bold {
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.montserrat{
+.montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-.montserrat-bold{
+.montserrat-bold {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
-.montserrat-italic{
+.montserrat-italic {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
 }
 
-.text-grey{
+.text-grey {
     color: #F2F2F2;
 }
 
-.text-pale{
+.text-pale {
     color: #CDD9A0;
 }
 
-.text-light{
+.text-light {
     color: #93A64E;
 }
 
-.text-green{
+.text-green {
     color: #8CA62D;
 }
 
-.text-dark{
+.text-dark {
     color: #075942;
 }
+
 /* ################################### END FONT STYLE ################################### */
 
 /* ################################### EVENT ################################### */
@@ -80,17 +82,20 @@
 .carousel-item {
     height: 400px;
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
     .carousel-item {
         height: 400px;
     }
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .carousel-item {
         height: 300px;
     }
 }
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 576px) {
     .carousel-item {
         height: 200px;
     }
@@ -101,22 +106,32 @@
     list-style: none;
 }
 
-.slide{
+.slide {
     width: 50vw;
 }
 
-@media screen and (max-width: 990px){
-    .slide{
+@media screen and (max-width: 990px) {
+    .slide {
         width: 90vw;
     }
 }
+
 /* END CAROUSEL */
 
 /* BODY */
-#body-event{
+#body-event {
     background-image: url(./../img/bg-dark.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+@media screen and (min-width: 82px) {
+    #product-picture {
+        width: 100%;
+    }
+}
+#product-picture-man {
+        height: 5rem;
+    }
 /* END BODY */
