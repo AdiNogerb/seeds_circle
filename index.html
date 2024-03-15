@@ -13,9 +13,10 @@
 <body>
     
     <header>
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/seeds_circle/public/assets/img/logoo.png" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img class="w-50 h-50" src="/seeds_circle/public/assets/img/logoo-removebg.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,21 +42,149 @@
         </nav>
     </header>
 
-    <main class="container-fluid p-0 m-0">
+    <main class="container-fluid p-0 m-0 back-dark">
+        <!-- BANNIERE -->
         <div class="row me-0">
-            <div class="col-12">
-                <img src="/seeds_circle/public/assets/img/Banner.png" alt="" class="img">
+            <div class="col-12" id="banner">
+                <div class="row text-light">
+                    <div class="col-7">
+                        <div class="montserrat-bold p-1 p-lg-5 col-lg-6">
+                            <h1>SEMEZ LA DIVERSITE, CULTIVEZ LA COMMUNAUTE</h1>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="d-flex h-100 align-items-end">
+                            <button class="btn shadow  mb-4 back-green rounded-3 amatic-bold">
+                                nous rejoindre
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        <!-- BOUTON VOIR LES PRODUITS     -->
             <div class="col-12 d-flex justify-content-center align-items-center back-pale ">
-                <button class="my-4 btn btn-lg back-green rounded-3 amatic-bold w-50 ">
+                <button class="my-4 btn shadow btn-lg back-green rounded-3 amatic-bold w-50 ">
                     Voir les produits
                 </button>
+            </div>
+        </div>
+        <!-- PLANTES VEDETTES -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="amatic-bold text-light">Plantes vedettes</h2>
+                </div>
+            </div>
+                <!-- LIGNE BLANCHE -->
+                <hr class="white-line">
+                <!-- LYS -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="montserrat text-light">Lys</h3>
+                </div>
+                <div class="col-12 col-lg-7  text-center">
+                    <img src="./public/assets/img/Lys.jpg" class="rounded-4 img-fluid" id="lys"  alt="Lys">
+                </div>
+                <div class="col-12 col-lg-5 text-light text-center">
+                    <div class="row">
+                        <div class="col-6 col-lg-12 montserrat mt-2">
+                            <p>Top vendeur : michel</p>
+                            <p>Les utilisateurs recommandent !</p>
+                        </div>
+                        <div class="col-6 col-lg-12 amatic-bold mt-4 ">
+                            <button class="my-4 btn shadow back-green rounded-4 amatic-bold">
+                                VOIR LES ANNONCES
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <!-- LIGNE BLANCHE -->
+                    <hr class="white-line">
+                    <!-- GRAINES DE TOMATE -->
+                    <h3 class="montserrat text-light m-4">Graines de tomates</h3>
+                </div>
+                <div class="col-12 col-lg-5  text-light text-center">
+                    <div class="row ">
+                        <div class="col-6 col-lg-12 montserrat mt-2 mt-lg-5 pt-lg-5">
+                            <p>Top vendeur : michel</p>
+                            <p>Les utilisateurs recommandent !</p>
+                        </div>
+                        <div class="col-6 col-lg-12 amatic-bold mt-4 ">
+                            <button class="my-4 btn shadow back-green rounded-4 amatic-bold">
+                                VOIR LES ANNONCES
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7  text-center">
+                    <img src="./public/assets/img/graines-tomates.png" class="rounded-4 img-fluid" id="lys"  alt="Lys">
+                </div>
+            </div>
+            <!-- LIGNE BLANCHE -->
+            <hr class="white-line">
+            <!-- QUI SOMMES NOUS -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="back-green rounded-3">
+                            <div class="row">
+                                <h2 class="amatic-bold">Qui sommes nous ?</h2>
+                                <div class="col-12 col-lg-7">
+                                    <img src="./public/assets/img/gardener-woman.jpg" id="gardener" class="m-lg-3 img-fluid rounded-3 shadow" alt="femme dans un jardin">
+                                </div>
+                                <div class="col-12 col-lg-5">
+                                    <div class="row">
+                                        <div class="col-12 order-0 order-lg-1 p-5">
+                                            <p>Seeds Circle est une communauté passionnée de jardiniers et d'amoureux de la nature !
+                                                Notre association offre un espace convivial où les membres peuvent échanger et troquer une variété de graines,
+                                                plantes, arbustes et arbres. Que vous soyez un novice curieux ou un jardinier expérimenté, 
+                                                vous trouverez ici l'opportunité d'élargir votre collection végétale, de découvrir de nouvelles espèces et de
+                                                partager vos connaissances avec d'autres passionnés. Ensemble, cultivons la biodiversité et créons des jardins
+                                                florissants qui enchantent nos sens et préservent notre environnement.</p>
+                                        </div>
+                                        <div class="col-12 order-1 order-lg-0 p-4">
+                                            <img src="./public/assets/img/logoo.png" class="rounded-4" alt="logo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                           
+                    </div>
+                </div>
+            </div>
+            <!-- TEMOIGNAGE ET REUSSITES -->
+                <div class="col-12 text-center">
+                    <h2 class="amatic-bold text-light pt-5">Temoignages et réussites</h2>
+                </div>
+                <hr class="white-line">
+            <div class="row text-light">
+                <div class="col-2 col-lg-6">
+                    <div>
+                        <img src="./public/assets/img/sophie.jpg" class="rounded-circle img-fluid" alt="sophie">
+                    </div>
+                    
+                </div>
+                <div class="col-10 col-lg-6 text-center">
+                    <div class="back-green rounded-3 p-5">
+                        <p>Je suis membre de cette association depuis plusieurs années maintenant,et je ne pourrais pas être plus satisfaite
+                            de l'expérience. Grâce aux échanges de graines et de plantes avec d'autres membres, j'ai pu diversifier mon jardin
+                            et découvrir des variétés que je n'aurais jamais eues autrement.</p>
+                        <p>Sophie M, Membre depuis 3 ans</p>
+                    </div>
+                </div>
+                <div class="col-2 col-lg-6">
+                    image de profil
+                </div>
+                <div class="col-10 col-lg-6 text-center">
+                    COMMENTAIRE
+                </div>
             </div>
         </div>
     </main>
     
     <footer>
-
+        
     </footer>
     <script src="lib\bootstrap\bootstrap.bundle.min.js"></script>
 </body>
