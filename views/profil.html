@@ -42,20 +42,28 @@
         </nav> -->
     </header>
     <main>
+        <!-- Container principal -->
         <div class="container-fluid">
             <div class="row">
+                <!-- côté gauche en dekstop -->
                 <div class="col-12 col-lg-5">
+                    <!-- ROW pour profil -->
                     <div class="row back-light rounded-bottom-4">
+                        <!-- IMG PROFIL  -->
                         <div class="col-5 my-3 py-2 my-lg-1 ps-lg-4 text-center">
                             <img class="rounded-circle" id="profilPicture" src="./../public/assets/img/personna-Jane-Doe.png" alt="Doe Jane">
                         </div>
+                        <!-- NAME PROFIL  -->
                         <div class="col-7 d-flex align-items-center justify-content-lg-around text-center text-light">
                             <div class="back-dark rounded-pill rounded-lg" id="profilName">
                                 DOE Jane
                             </div>
                         </div>
                     </div>
+                    <!-- FIN ROW  -->
+                    <!-- ROW pour ce qu'il y a en dessous de profil : boutons, intérêts, besoins -->
                     <div class="row">
+                        <!-- COL pour les boutons -->
                         <div class="col-12 my-4 d-flex justify-content-around amatic-bold">
                             <button class="p-1 px-3 back-green rounded-pill">
                             + Produit
@@ -64,22 +72,51 @@
                                 + Besoin
                             </button>
                         </div>
+                        <!-- COL pour les intérêts  -->
                         <div class="col-12 back-light text-center rounded-bottom-4">
                             <h2 class="amatic-bold">Intérêts</h2>
                             <p class="montserrat">
                                 Jardinage urbain, design d'intérieur,développement durable
                             </p>
                         </div>
+                        <!-- COL BESOINS -->
                         <div class="col-12 bg-warning">
-                            Need
+                            <div class="row">
+                                <!-- 1ER BESOIN -->
+                                <div class="col-6 text-center bg-danger">
+                                    <h3>Besoins</h3>
+                                    <p>
+                                        Graines de tournesol
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <img class="needPicture" src="../public/assets/img/sunflower-seeds.jpg" alt="Image Besoin graines tournesol">
+                                </div>
+                                <!-- 2EME BESOIN -->
+                                <div class="col-6 text-center bg-primary">
+                                    <h3>Besoins</h3>
+                                    <p>
+                                        Fraises
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <img class="needPicture" src="../public/assets/img/fresh-strawberries-wooden-table.jpg" alt="Image Besoin fraises fraiches sur table en bois">
+                                </div>
+                            </div>
                         </div>
+                        <!-- FIN COL BESOINS -->
                     </div>
+                    <!-- FIN ROW -->
                 </div>
+                <!-- fin côté gauche dekstop -->
+                <!-- côté droit dekstop -->
                 <div class="col-12 col-lg-7 bg-danger">
                     Products
                 </div>
+                <!-- fin côté droit dekstop -->
             </div>
         </div>
+        <!-- Fin Container -->
 
     </main>
     <footer>
