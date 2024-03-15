@@ -125,26 +125,39 @@
     background-position: center;
     background-size: cover;
 }
+
 @media screen and (min-width: 82px) {
     #product-picture {
         width: 100%;
     }
 }
+
 #product-picture-man {
-        height: 5rem;
-    }
+    width: 15%;
+
+}
+
+ul {
+    columns: 2;
+}
+
+hr {
+    width: 50%;
+    background-color: #075942;
+}
+
 /* END BODY */
 /* ################################### END EVENT ################################### */
 
 /* ################################### CALENDAR ################################### */
-#calendar{
+#calendar {
     width: 98%;
 }
 
-.cal-day{
+.cal-day {
     width: 14.28%;
 }
 
-img{
+img {
     width: 100%;
 }
