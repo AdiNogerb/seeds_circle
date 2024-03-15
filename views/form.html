@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+<!------------------------------------------------------- début du head -------------------------------------->
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <title>Seeds Circle</title>
 </head>
+<!-------------------------------------------------------- fin du head ----------------------------------------->
 
 <body>
+    <!------------------------------------------------------- début du header --------------------------------------------->
     <header>
         <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark mb-0">
             <div class="container-fluid">
@@ -43,27 +46,33 @@
             </div>
         </nav>
     </header>
+    <!------------------------------------------------------- fin du header ------------------------------------------------>
     <main>
         <div class="container-fluid back-light mt-0 pt-5 pb-5">
             <div class="container back-pale rounded-4 pb-5">
+                <!-------------------------------------------------- début du formulaire pour les utilisateurs déjà inscrit ------------------------------------------------------------------->
                 <form>
                     <div class="row justify-content-center amatic-bold pt-4">
                         <div class="col-12 col-md-6">
                             <h1 class="text-center">Déjà inscrit ?</h1>
                         </div>
                     </div>
+                    <!--------------------------------------------------- début zone mail ------------------------------------------------------------------------------------------------------------>
                     <div class="row justify-content-center mb-3">
                         <div class="col-12 col-md-6">
                             <label class="form-label" for="email">Adresse mail* : </label>
                             <input type="email" class="form-control" name="email" placeholder="name@example.com">
                         </div>
                     </div>
+                    <!---------------------------------------------------- fin zone mail -------------------------------------------------------------------------------------------------------------->
+                    <!---------------------------------------------------- début zone mot de passe ---------------------------------------------------------------------------------------------------->
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <label class="form-label" for="password">Mot de passe* : </label>
                             <input type="password" class="form-control mb-3" name="password" placeholder="motdepasse">
                         </div>
                     </div>
+                    <!---------------------------------------------------- fin zone mot de passe ------------------------------------------------------------------------------------------------------>
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <p>*champs obligatoire</p>
@@ -71,18 +80,22 @@
                     </div>
                     <div class="row ">
                         <div class="col-12 d-flex justify-content-center">
-                            <button type="button" class="btn btn-lg btn-outline amatic-bold back-green rounded-pill px-5">VALIDER</button>
+                            <button type="button"
+                                class="btn btn-lg btn-outline amatic-bold back-green rounded-pill px-5">VALIDER</button>
                         </div>
                     </div>
                 </form>
+                <!--------------------------------------------------- fin du formulaire pour les utilisateurs déjà inscrit --------------------------------------------------------------------->
             </div>
             <div class="container justify-content-center back-pale mt-5 pb-2 rounded-4">
+                <!---------------------------------------------------- début du formulaire pour les nouveaux utilisateurs ---------------------------------------------------------------------->
                 <form class="" novalidate>
                     <div class="row justify-content-center amatic-bold pt-4">
                         <div class="col-12 col-md-6">
                             <h1 class="text-center">Formulaire</h1>
                         </div>
                     </div>
+                    <!---------------------------------------------------------- début zone nom -------------------------------------------------------------------------------------------------------------->
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <label for="validationServer01" class="form-label">Nom* : </label>
@@ -91,6 +104,8 @@
                                 C'est bon!</div>
                         </div>
                     </div>
+                    <!------------------------------------------------------------ fin zone nom --------------------------------------------------------------------------------------------------------------->
+                    <!------------------------------------------------------------- début zone prénom --------------------------------------------------------------------------------------------------------->
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <label for="validationServer02" class="form-label">Prénom : </label>
@@ -100,6 +115,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-------------------------------------------------------------- fin zone prénom ----------------------------------------------------------------------------------------------------------->
+                    <!-------------------------------------------------------------- début zone mail ----------------------------------------------------------------------------------------------------------->
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <label for="validationServerUsername" class="form-label">Adresse mail* : </label>
@@ -110,42 +127,51 @@
                             </div>
                         </div>
                     </div>
-
+                    <!---------------------------------------------------------------- fin zone mail ------------------------------------------------------------------------------------------------------------->
+                    <!---------------------------------------------------------------- début zone mot de passe --------------------------------------------------------------------------------------------------->
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <label for="floatingPassword">Mot de passe* : </label><br>
                             <input type="password" class="form-control" id="floatingPassword" placeholder="motdepasse">
                         </div>
                     </div>
-
+                    <!------------------------------------------------------------------ fin zone mot de passe ---------------------------------------------------------------------------------------------------->
+                    <!------------------------------------------------------------------ début zone téléphone ----------------------------------------------------------------------------------------------------->
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <label for="validationServer05" class="form-label">Téléphone : </label>
-                            <input type="tel" class="form-control"
-                                id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                            <input type="tel" class="form-control" id="validationServer05"
+                                aria-describedby="validationServer05Feedback" required>
                         </div>
                     </div>
+                    <!------------------------------------------------------------------ fin zone téléphone -------------------------------------------------------------------------------------------------------->
                     <br>
+                    <!------------------------------------------------------------------ début zone photo de profil ------------------------------------------------------------------------------------------------->
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6">
                             <div class="image pb-5">
-                                <label for="formFileLg" class="d-flex justify-content-center">Photo de profil : </label><br>
+                                <label for="formFileLg" class="d-flex justify-content-center">Photo de profil :
+                                </label><br>
                                 <input class="form-control form-control-lg" id="formFileLg" type="file">
                             </div>
                         </div>
                     </div>
+                    <!------------------------------------------------------------------ fin zone photo de profil --------------------------------------------------------------------------------------------------->
                     <div class="row justify-content-center">
                         <div class="col-md-6">
                             <p>*champs obligatoire</p>
                         </div>
                     </div>
+                    <!------------------------------------------------------------------- début zone bouton valider ------------------------------------------------------------------------------------------------------------->
                     <div class="row">
                         <div class="d-flex justify-content-center mb-3">
                             <button type="button"
                                 class="btn btn-lg btn-outline amatic-bold back-green rounded-pill px-5 m-4">VALIDER</button>
                         </div>
                     </div>
+                    <!-------------------------------------------------------------------- fin zone bouton valider -------------------------------------------------------------------------------------------------------------->
                 </form>
+                <!------------------------------------------------------------------------------------ fin du formulaire pour les nouveaux utilisateurs -------------------------------------------------------------------------->
             </div>
         </div>
     </main>
