@@ -85,10 +85,11 @@
         height: 400px;
     }
     #profilPicture{
-        height: 10rem;
+        height: 8rem;
     }
     #profilName{
         width: 19rem;
+        height: 2rem;
     }
 }
 @media screen and (max-width: 768px){
@@ -104,10 +105,10 @@
 
 @media screen and (min-width: 992px) {
     #profilPicture{
-        height: 11rem;
+        height: 10rem;
     }
     #profilName{
-        width: 14rem;
+        width: 12rem;
     }
 }
 
