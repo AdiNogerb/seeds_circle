@@ -91,6 +91,9 @@
         width: 19rem;
         height: 2rem;
     }
+    .needPicture{
+        height: 7rem;
+    }
 }
 @media screen and (max-width: 768px){
     .carousel-item {
@@ -109,6 +112,9 @@
     }
     #profilName{
         width: 12rem;
+    }
+    .needPicture{
+        height: 10rem;
     }
 }
 
