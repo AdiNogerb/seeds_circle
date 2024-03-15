@@ -120,3 +120,11 @@
     background-size: cover;
 }
 /* END BODY */
+
+.cal-day{
+    width: 14.28%;
+}
+
+img{
+    width: 100%;
+}
