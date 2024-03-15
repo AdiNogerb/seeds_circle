@@ -1,3 +1,4 @@
+/* ################################### BACKGROUND COLOR ################################### */
 .back-grey{
     background-color: #F2F2F2;
 }
@@ -17,7 +18,9 @@
 .back-dark{
     background-color: #075942;
 }
+/* ################################### END BACKGROUND COLOR ################################### */
 
+/* ################################### FONT STYLE ################################### */
 .amatic{
     font-family: "Amatic SC", sans-serif;
     font-weight: 400;
@@ -70,3 +73,50 @@
 .text-dark{
     color: #075942;
 }
+/* ################################### END FONT STYLE ################################### */
+
+/* ################################### EVENT ################################### */
+/* CAROUSEL */
+.carousel-item {
+    height: 400px;
+}
+@media screen and (max-width: 992px){
+    .carousel-item {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 768px){
+    .carousel-item {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 576px){
+    .carousel-item {
+        height: 200px;
+    }
+}
+
+.carousel-indicators {
+    position: relative;
+    list-style: none;
+}
+
+.slide{
+    width: 50vw;
+}
+
+@media screen and (max-width: 990px){
+    .slide{
+        width: 90vw;
+    }
+}
+/* END CAROUSEL */
+
+/* BODY */
+#body-event{
+    background-image: url(./../img/bg-dark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* END BODY */
