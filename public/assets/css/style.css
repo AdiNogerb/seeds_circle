@@ -125,7 +125,6 @@
     background-position: center;
     background-size: cover;
 }
-
 @media screen and (min-width: 82px) {
     #product-picture {
         width: 100%;
@@ -135,3 +134,17 @@
         height: 5rem;
     }
 /* END BODY */
+/* ################################### END EVENT ################################### */
+
+/* ################################### CALENDAR ################################### */
+#calendar{
+    width: 98%;
+}
+
+.cal-day{
+    width: 14.28%;
+}
+
+img{
+    width: 100%;
+}
