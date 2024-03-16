@@ -80,11 +80,6 @@
 .carousel-item {
     height: 400px;
 }
-@media screen and (max-width: 992px){
-    .carousel-item {
-        height: 400px;
-    }
-}
 @media screen and (max-width: 768px){
     .carousel-item {
         height: 300px;
@@ -96,17 +91,8 @@
     }
 }
 
-.carousel-indicators {
-    position: relative;
-    list-style: none;
-}
-
-.slide{
-    width: 50vw;
-}
-
 @media screen and (max-width: 992px){
-    .slide{
+    .vw-90{
         width: 90vw;
     }
 }
