@@ -118,6 +118,14 @@
     width: 14.28%;
 }
 
-img{
-    width: 100%;
+.img-event{
+    max-height: 200px;
+}
+
+.img-next-event{
+    max-width: 390px;
+}
+
+.h-51{
+    height: 51%;
 }
