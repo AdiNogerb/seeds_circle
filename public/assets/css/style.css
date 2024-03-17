@@ -131,7 +131,19 @@
 }
 /* ################################### END CALENDAR ################################### */
 
+/* ################################### PRODUCT LIST ################################### */
 .card-img-top{
-    height: 325px;
+    max-height: 325px;
     width: auto;
 }
+@media screen and (max-width: 768px){
+    .card-img-top {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 576px){
+    .card-img-top {
+        height: 200px;
+    }
+}
+/* ################################### END PRODUCT LIST ################################### */

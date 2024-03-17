@@ -55,11 +55,17 @@
                     <div class="col-10 col-lg-6 back-grey rounded-5">
                         <form class="d-flex" role="search">
                             <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <input class="form-control back-grey rounded-5 border-0" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control back-grey rounded-5 border-0 montserrat-italic" type="search" placeholder="Graines de tomate, romarin, hêtre..." aria-label="Search">
                         </form>                
                     </div>
                 </div>
                 <!-- FIN BARRE DE RECHERCHE -->
+
+                <!-- BOUTON OFFCANVA -->
+                <div class="col-12 d-flex justify-content-end d-lg-none back-green">
+                    <button class="btn border-0 text-grey text-decoration-underline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Voir les filtres</button>
+                </div>
+                <!-- FIN BOUTON OFFCANVA -->
 
                 <!-- TITRE -->
                 <div class="col-12 back-dark rounded-4 rounded-top-0">
@@ -72,10 +78,10 @@
             <!-- LES CARDS ET LA MODAL DESKTOP -->
             <div class="row">
                 <!-- DIV CARDS -->
-                <div class="col-11">
+                <div class="col-12 col-lg-11">
                     <div class="row d-flex justify-content-around">
                         <!-- CARD 1 -->
-                        <div class="col-4 p-5">
+                        <div class="col-12 col-lg-6 col-xxl-4 p-5">
                             <div class="card back-light border-0 text-center">
                                 <div class="d-flex justify-content-center">
                                     <img src="./../public/assets/img/pexels-anna-romanova-5460264.jpg" class="card-img-top img-fluid rounded-3" alt="...">
@@ -92,7 +98,7 @@
                         <!-- FIN CARD 1 -->
 
                         <!-- CARD 2 -->
-                        <div class="col-4 p-5">
+                        <div class="col-12 col-lg-6 col-xxl-4 p-5">
                             <div class="card back-light border-0 text-center">
                                 <div class="d-flex justify-content-center">
                                     <img src="./../public/assets/img/pexels-dids-4091215.jpg" class="card-img-top img-fluid rounded-3" alt="...">
@@ -109,7 +115,7 @@
                         <!-- FIN CARD 2 -->
 
                         <!-- CARD 3 -->
-                        <div class="col-4 p-5">
+                        <div class="col-12 col-lg-6 col-xxl-4 p-5">
                             <div class="card back-light border-0 text-center">
                                 <div class="d-flex justify-content-center">
                                     <img src="./../public/assets/img/pexels-uriel-mont-6280436.jpg" class="card-img-top img-fluid rounded-3" alt="...">
@@ -126,7 +132,7 @@
                         <!-- FIN CARD 3 -->
 
                         <!-- CARD 4 -->
-                        <div class="col-4 p-5">
+                        <div class="col-12 col-lg-6 col-xxl-4 p-5">
                             <div class="card back-light border-0 text-center">
                                 <div class="d-flex justify-content-center">
                                     <img src="./../public/assets/img/pexels-marek-kupiec-9974505.jpg" class="card-img-top img-fluid rounded-3" alt="...">
@@ -143,7 +149,7 @@
                         <!-- FIN CARD 4 -->
 
                         <!-- CARD 5 -->
-                        <div class="col-4 p-5">
+                        <div class="col-12 col-lg-6 col-xxl-4 p-5">
                             <div class="card back-light border-0 text-center">
                                 <div class="d-flex justify-content-center">
                                     <img src="./../public/assets/img/pexels-stefan-straka-904382.jpg" class="card-img-top img-fluid rounded-3" alt="...">
@@ -160,7 +166,7 @@
                         <!-- FIN CARD 5 -->
 
                         <!-- CARD 6 -->
-                        <div class="col-4 p-5">
+                        <div class="col-12 col-lg-6 col-xxl-4 p-5">
                             <div class="card back-light border-0 text-center">
                                 <div class="d-flex justify-content-center">
                                     <img src="./../public/assets/img/pexels-adonyi-gábor-1458377.jpg" class="card-img-top img-fluid rounded-3" alt="...">
@@ -180,7 +186,7 @@
                 <!-- FIN DIV CARDS -->
 
                 <!-- BOUTON OFFCANVA -->
-                <div class="col-1">
+                <div class="d-none d-lg-block col-lg-1">
                     <button class="btn border-0 text-grey text-decoration-underline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Voir les filtres</button>
                 </div>
                 <!-- FIN BOUTON OFFCANVA -->
@@ -198,43 +204,45 @@
                     <div class="offcanvas-body container-fluid">
                         <div class="row">
                             <!-- FORM : CATEGORIE -->
+                            <hr/>
                             <div class="col-12 d-flex flex-row mb-4">
                                 <div class="col-6">
-                                    <p>Catégorie :</p>
+                                    <p class="montserrat-bold">Catégorie :</p>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="category" id="category1" checked>
                                         <label class="form-check-label" for="category1">
-                                        Intérieur
+                                            Intérieur
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="category" id="category2">
                                         <label class="form-check-label" for="category2">
-                                        Extérieur
+                                            Extérieur
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <!-- FIN FORM : CATEGORIE -->
-
+                            
                             <!-- FORM : PET FRIENDLY -->
+                            <hr/>
                             <div class="col-12 d-flex flex-row mb-4">
                                 <div class="col-6">
-                                    <p>Pet Friendly :</p>
+                                    <p class="montserrat-bold">Pet Friendly :</p>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="pet-friendly" id="pet-friendly1" checked>
                                         <label class="form-check-label" for="pet-friendly1">
-                                        OUI
+                                            OUI
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="pet-friendly" id="pet-friendly2">
                                         <label class="form-check-label" for="pet-friendly2">
-                                        NON
+                                            NON
                                         </label>
                                     </div>
                                 </div>
@@ -242,36 +250,67 @@
                             <!-- FIN FORM : PET FRIENDLY -->
 
                             <!-- FORM : ÉTAT -->
+                            <hr/>
                             <div class="col-12 d-flex flex-row mb-4">
                                 <div class="col-6">
-                                    <p>État :</p>
+                                    <p class="montserrat-bold">État :</p>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="condition" id="condition1" checked>
                                         <label class="form-check-label" for="condition1">
-                                        Graine
+                                            Graine
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="condition" id="condition2">
                                         <label class="form-check-label" for="condition2">
-                                        Bulbe
+                                            Bulbe
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="condition" id="condition3">
                                         <label class="form-check-label" for="condition3">
-                                        Semis
+                                            Semis
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <!-- FIN FORM : ÉTAT -->
 
+                            <!-- FORM : FROID -->
+                            <hr/>
+                            <div class="col-12 d-flex flex-row mb-4">
+                                <div class="col-6">
+                                    <p class="montserrat-bold">Résistance au froid :</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cold" id="cold1" checked>
+                                        <label class="form-check-label" for="cold1">
+                                            Rustique (jusque -15°)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cold" id="cold2">
+                                        <label class="form-check-label" for="cold2">
+                                            Semi-rustique (jusque 0°)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cold" id="cold3">
+                                        <label class="form-check-label" for="cold3">
+                                            Tendre (jusque 10°)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIN FORM : FROID -->
+
                             <!-- FORM : LUMIERE -->
+                            <hr/>
                             <div class="col-6">
-                                <p>Exposition lumineuse :</p>
+                                <p class="montserrat-bold">Exposition lumineuse :</p>
                             </div>
                             <div class="col-6 m-auto d-flex flex-row mb-4">
                                 <select class="form-select" aria-label="Default select example">
@@ -285,8 +324,9 @@
                             <!-- FIN FORM : LUMIERE -->
 
                             <!-- FORM : ARROSAGE -->
+                            <hr/>
                             <div class="col-6">
-                                <p>Arrosage :</p>
+                                <p class="montserrat-bold">Arrosage :</p>
                             </div>
                             <div class="col-6 m-auto d-flex flex-row mb-4">
                                 <select class="form-select" aria-label="Default select example">
@@ -294,10 +334,26 @@
                                     <option value="2">Peu fréquent</option>
                                     <option value="3">Régulier</option>
                                     <option value="4">Fréquent</option>
-                                    <option value="5">Très fréquent </option>
+                                    <option value="5">Très fréquent</option>
                                 </select>
                             </div>
                             <!-- FIN FORM : ARROSAGE -->
+
+                            <!-- FORM : SOL -->
+                            <hr/>
+                            <div class="col-6">
+                                <p class="montserrat-bold">Type de sol :</p>
+                            </div>
+                            <div class="col-6 m-auto d-flex flex-row mb-4">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Argileux</option>
+                                    <option value="2">Calcaire</option>
+                                    <option value="3">Humifère</option>
+                                    <option value="4">Limoneux</option>
+                                    <option value="5">Sableux</option>
+                                </select>
+                            </div>
+                            <!-- FIN FORM : SOL -->
                         </div>
                     </div>
                     <!-- FIN OFFCANVA : FORM -->
