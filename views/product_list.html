@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./../public/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/e0df362f98.js" crossorigin="anonymous"></script>
+    <title>Seeds Circle</title>
+</head>
+<body class="back-light">
+    <!-- ######################################## Header ######################################## -->
+    <header>
+        <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ######################################## Fin Header ######################################## -->
+
+    <!-- ######################################## Main ######################################## -->
+    <main>
+        <div class="container-fluid">
+            <!-- HAUT : BARRE DE RECHERCHE ET TITRE -->
+            <div class="row">
+                <!-- BARRE DE RECHERCHE -->
+                <div class="col-12 back-green pt-3 pb-3 d-flex justify-content-center">
+                    <div class="col-10 col-lg-6 back-grey rounded-5">
+                        <form class="d-flex" role="search">
+                            <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input class="form-control back-grey rounded-5 border-0" type="search" placeholder="Search" aria-label="Search">
+                        </form>                
+                    </div>
+                </div>
+                <!-- FIN BARRE DE RECHERCHE -->
+
+                <!-- TITRE -->
+                <div class="col-12 back-dark rounded-4 rounded-top-0">
+                    <h1 class="amatic text-grey text-center">La Zone de Troc</h1>
+                </div>
+                <!-- FIN TITRE -->
+            </div>
+            <!-- FIN HAUT : BARRE DE RECHERCHE ET TITRE -->
+
+            <!-- LES CARDS ET LA MODAL DESKTOP -->
+            <div class="row">
+                <!-- DIV CARDS -->
+                <div class="col-11">
+                    <div class="row d-flex justify-content-around">
+                        <!-- CARD 1 -->
+                        <div class="col-4 p-5">
+                            <div class="card back-light border-0 text-center">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./../public/assets/img/pexels-anna-romanova-5460264.jpg" class="card-img-top img-fluid rounded-3" alt="...">
+                                </div>
+                                <div class="card-body montserrat">
+                                  <h2 class="card-title">Rosier</h2>
+                                  <p class="card-text">Résistant et facile à entretenir, ce rosier est le choix parfait pour apporter de la couleur et de la grâce à votre espace extérieur.</p>
+                                  <div class="col-12 d-flex justify-content-end">
+                                      <a href="#" class="text-dark">Voir le produit</a>
+                                  </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <!-- FIN CARD 1 -->
+
+                        <!-- CARD 2 -->
+                        <div class="col-4 p-5">
+                            <div class="card back-light border-0 text-center">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./../public/assets/img/pexels-dids-4091215.jpg" class="card-img-top img-fluid rounded-3" alt="...">
+                                </div>
+                                <div class="card-body montserrat">
+                                  <h2 class="card-title">Laurier</h2>
+                                  <p class="card-text">C'est super jolie et en plus ca fait rire les oiseaux, ça fait chanter les abeilles, ça chasse les nuages et fait briller le soleil.</p>
+                                  <div class="col-12 d-flex justify-content-end">
+                                      <a href="#" class="text-dark">Voir le produit</a>
+                                  </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <!-- FIN CARD 2 -->
+
+                        <!-- CARD 3 -->
+                        <div class="col-4 p-5">
+                            <div class="card back-light border-0 text-center">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./../public/assets/img/pexels-uriel-mont-6280436.jpg" class="card-img-top img-fluid rounded-3" alt="...">
+                                </div>
+                                <div class="card-body montserrat">
+                                  <h2 class="card-title">Romarin</h2>
+                                  <p class="card-text">Cultivé avec soin et prêt à être récolté, notre romarin est parfait pour donner une touche de fraîcheur à vos recettes préférées.</p>
+                                  <div class="col-12 d-flex justify-content-end">
+                                      <a href="#" class="text-dark">Voir le produit</a>
+                                  </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <!-- FIN CARD 3 -->
+
+                        <!-- CARD 4 -->
+                        <div class="col-4 p-5">
+                            <div class="card back-light border-0 text-center">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./../public/assets/img/pexels-marek-kupiec-9974505.jpg" class="card-img-top img-fluid rounded-3" alt="...">
+                                </div>
+                                <div class="card-body montserrat">
+                                  <h2 class="card-title">Graines de lin</h2>
+                                  <p class="card-text">Des graines de lin à troquer, c'est vraiment super comme produit, mais ca glisse beaucoup et on s'en met dans les chausettes.</p>
+                                  <div class="col-12 d-flex justify-content-end">
+                                      <a href="#" class="text-dark">Voir le produit</a>
+                                  </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <!-- FIN CARD 4 -->
+
+                        <!-- CARD 5 -->
+                        <div class="col-4 p-5">
+                            <div class="card back-light border-0 text-center">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./../public/assets/img/pexels-stefan-straka-904382.jpg" class="card-img-top img-fluid rounded-3" alt="...">
+                                </div>
+                                <div class="card-body montserrat">
+                                  <h2 class="card-title">Sapin</h2>
+                                  <p class="card-text">Un beau sapin, roi des forêts. Parfait pour noël, par contre, gros risques de mettre des epines partout.</p>
+                                  <div class="col-12 d-flex justify-content-end">
+                                      <a href="#" class="text-dark">Voir le produit</a>
+                                  </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <!-- FIN CARD 5 -->
+
+                        <!-- CARD 6 -->
+                        <div class="col-4 p-5">
+                            <div class="card back-light border-0 text-center">
+                                <div class="d-flex justify-content-center">
+                                    <img src="./../public/assets/img/pexels-adonyi-gábor-1458377.jpg" class="card-img-top img-fluid rounded-3" alt="...">
+                                </div>
+                                <div class="card-body montserrat">
+                                  <h2 class="card-title">Coquelicot</h2>
+                                  <p class="card-text">Le coquelicot fleurit en effet jusqu'à 1700 m d'altitude et a longtemps été considéré comme une mauvaise herbe. Dans la tradition, il est donc devenu un symbole de liberté et d'adaptabilité, de volonté et d'endurance. Dans l'Antiquité, le coquelicot était associé à Déméter, déesse de la fertilité.</p>
+                                  <div class="col-12 d-flex justify-content-end">
+                                      <a href="#" class="text-dark">Voir le produit</a>
+                                  </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <!-- FIN CARD 6 -->
+                    </div>
+                </div>
+                <!-- FIN DIV CARDS -->
+
+                <!-- BOUTON OFFCANVA -->
+                <div class="col-1">
+                    <button class="btn border-0 text-grey text-decoration-underline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Voir les filtres</button>
+                </div>
+                <!-- FIN BOUTON OFFCANVA -->
+
+                <!-- OFFCANVA -->
+                <div class="offcanvas offcanvas-end back-green montserrat" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <!-- OFFCANVA : TITRE -->
+                    <div class="offcanvas-header">
+                      <h3 class="offcanvas-title text-grey" id="offcanvasWithBothOptionsLabel">Filtres de catégories</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!-- FIN OFFCANVA : TITRE -->
+
+                    <!-- OFFCANVA : FORM -->
+                    <div class="offcanvas-body container-fluid">
+                        <div class="row">
+                            <!-- FORM : CATEGORIE -->
+                            <div class="col-12 d-flex flex-row mb-4">
+                                <div class="col-6">
+                                    <p>Catégorie :</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="category" id="category1" checked>
+                                        <label class="form-check-label" for="category1">
+                                        Intérieur
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="category" id="category2">
+                                        <label class="form-check-label" for="category2">
+                                        Extérieur
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIN FORM : CATEGORIE -->
+
+                            <!-- FORM : PET FRIENDLY -->
+                            <div class="col-12 d-flex flex-row mb-4">
+                                <div class="col-6">
+                                    <p>Pet Friendly :</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pet-friendly" id="pet-friendly1" checked>
+                                        <label class="form-check-label" for="pet-friendly1">
+                                        OUI
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pet-friendly" id="pet-friendly2">
+                                        <label class="form-check-label" for="pet-friendly2">
+                                        NON
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIN FORM : PET FRIENDLY -->
+
+                            <!-- FORM : ÉTAT -->
+                            <div class="col-12 d-flex flex-row mb-4">
+                                <div class="col-6">
+                                    <p>État :</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="condition" id="condition1" checked>
+                                        <label class="form-check-label" for="condition1">
+                                        Graine
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="condition" id="condition2">
+                                        <label class="form-check-label" for="condition2">
+                                        Bulbe
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="condition" id="condition3">
+                                        <label class="form-check-label" for="condition3">
+                                        Semis
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIN FORM : ÉTAT -->
+
+                            <!-- FORM : LUMIERE -->
+                            <div class="col-6">
+                                <p>Exposition lumineuse :</p>
+                            </div>
+                            <div class="col-6 m-auto d-flex flex-row mb-4">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Très faible</option>
+                                    <option value="2">Faible</option>
+                                    <option value="3">Modérée</option>
+                                    <option value="4">Forte</option>
+                                    <option value="5">Très forte</option>
+                                </select>
+                            </div>
+                            <!-- FIN FORM : LUMIERE -->
+
+                            <!-- FORM : ARROSAGE -->
+                            <div class="col-6">
+                                <p>Arrosage :</p>
+                            </div>
+                            <div class="col-6 m-auto d-flex flex-row mb-4">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Rare</option>
+                                    <option value="2">Peu fréquent</option>
+                                    <option value="3">Régulier</option>
+                                    <option value="4">Fréquent</option>
+                                    <option value="5">Très fréquent </option>
+                                </select>
+                            </div>
+                            <!-- FIN FORM : ARROSAGE -->
+                        </div>
+                    </div>
+                    <!-- FIN OFFCANVA : FORM -->
+                </div>
+                <!-- FIN OFFCANVA -->
+            </div>
+        </div>
+    </main>
+    <!-- ######################################## Fin Main ######################################## -->
+
+    <!-- ######################################## Footer ######################################## -->
+    <footer>
+        <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!-- ######################################## Fin Footer ######################################## -->
+    <script src="./../lib/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
