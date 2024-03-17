@@ -81,11 +81,6 @@
 .carousel-item {
     height: 400px;
 }
-@media screen and (max-width: 992px){
-    .carousel-item {
-        height: 400px;
-    }
-}
 @media screen and (max-width: 768px){
     .carousel-item {
         height: 300px;
@@ -97,17 +92,8 @@
     }
 }
 
-.carousel-indicators {
-    position: relative;
-    list-style: none;
-}
-
-.slide{
-    width: 50vw;
-}
-
-@media screen and (max-width: 990px){
-    .slide{
+@media screen and (max-width: 992px){
+    .vw-90{
         width: 90vw;
     }
 }
@@ -121,3 +107,43 @@
     background-size: cover;
 }
 /* END BODY */
+/* ################################### END EVENT ################################### */
+
+/* ################################### CALENDAR ################################### */
+#calendar{
+    width: 98%;
+}
+
+.cal-day{
+    width: 14.28%;
+}
+
+.img-event{
+    max-height: 200px;
+}
+
+.img-next-event{
+    max-width: 390px;
+}
+
+.h-51{
+    height: 51%;
+}
+/* ################################### END CALENDAR ################################### */
+
+/* ################################### PRODUCT LIST ################################### */
+.card-img-top{
+    max-height: 325px;
+    width: auto;
+}
+@media screen and (max-width: 768px){
+    .card-img-top {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 576px){
+    .card-img-top {
+        height: 200px;
+    }
+}
+/* ################################### END PRODUCT LIST ################################### */
