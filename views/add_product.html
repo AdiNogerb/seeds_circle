@@ -15,25 +15,26 @@
 <body class="back-dark">
     <!-- ######################################## Header ######################################## -->
     <header>
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <a class="navbar-brand" href="/seeds_circle/index.html"><img class="w-50 h-50" src="/seeds_circle/public/assets/img/logoo-removebg.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
+                            <a class="nav-link fs-2 text-dark" href="/seeds_circle/views/calendar.html">Evenements</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
+                            <a class="nav-link fs-2 text-dark" href="/seeds_circle/views/product_list.html">Liste de produits</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
+                            <a class="nav-link fs-2 text-dark" href="/seeds_circle/views/add_product.html">Créer une annonce</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
+                            <a class="nav-link fs-2 text-dark" href="/seeds_circle/views/profil.html" >Profil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
@@ -50,31 +51,77 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <!-- BASTER OR NEED -->
-                <div class="col-12 col-lg-8 back-light d-flex flex-column align-items-center rounded-4 mt-4 mb-2">
-                    <p class="amatic-bold fs-2">Proposez-vous ou recherchez-vous ce produit ?</p>
-                    <div class="montserrat mb-3">
-                        <div class="form-check d-flex align-items-center">
-                            <input class="form-check-input" type="radio" name="barter_need" id="barter">
-                            <label class="form-check-label ms-3 fs-5" for="barter">
-                              Je propose !
-                            </label>
-                        </div>
-                        <div class="form-check d-flex align-items-center">
-                            <input class="form-check-input" type="radio" name="barter_need" id="need" checked>
-                            <label class="form-check-label ms-3 fs-5" for="need">
-                              J'ai besoin !
-                            </label>
+                <form action="#" class="col-12 col-lg-8">
+                    <div class="col-12 back-light d-flex flex-column align-items-center rounded-4 mt-4 mb-2">
+                        <p class="amatic-bold fs-2">Proposez-vous ou recherchez-vous ce produit ?</p>
+                        <div class="montserrat mb-3">
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input" type="radio" name="barter_need" id="barter">
+                                <label class="form-check-label ms-3 fs-5" for="barter">
+                                  Je propose !
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input" type="radio" name="barter_need" id="need" checked>
+                                <label class="form-check-label ms-3 fs-5" for="need">
+                                  J'ai besoin !
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- END BASTER OR NEED -->
+                    <!-- END BASTER OR NEED -->
+    
+                    <!-- TITLE -->
+                    <div class="col-12 back-light d-flex flex-column align-items-center rounded-4 mt-4 mb-2">
+                        <p class="amatic-bold fs-2">Ajoutez un titre à votre annonce</p>
+                        <input class="col-10 rounded-4 border-0 text-center pt-2 pb-2" type="text" name="title-offer" id="title-offer" placeholder="Graines de courge">
+                        <button type="button" class="btn btn-lg btn-outline amatic-bold fs-3 text-grey back-dark rounded-pill px-5 shadow mt-3 mb-3">VALIDER</button>
+                    </div>  
+                </form>
+                <!-- END TITLE -->
 
-                <!-- TITLE -->
-                <div class="col-12 col-lg-8 back-light d-flex flex-column align-items-center rounded-4 mt-4 mb-2">
-                    <p class="amatic-bold fs-2">Ajoutez un titre à votre annonce</p>
-                    <input class="col-10 rounded-4 border-0 text-center pt-2 pb-2" type="text" name="title-offer" id="title-offer" placeholder="Graines de courge">
-                    <button type="button" class="btn btn-lg btn-outline amatic-bold fs-3 text-grey back-dark rounded-pill px-5 shadow mt-3 mb-3">VALIDER</button>
-                </div>
+                <!-- PICTURE(S) -->
+                <form action="#" class="col-12 col-lg-8">
+                    <div class="col-12 back-light d-flex flex-column align-items-center rounded-4 mt-4 mb-2">
+                        <p class="amatic-bold fs-2">Vous pouvez ajouter jusqu'à 3 photos</p>
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupFile01">Photo 1</label>
+                                <input type="file" class="form-control" id="inputGroupFile01">
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupFile01">Photo 2</label>
+                                <input type="file" class="form-control" id="inputGroupFile01">
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupFile01">Photo 3</label>
+                                <input type="file" class="form-control" id="inputGroupFile01">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-outline amatic-bold fs-3 text-grey back-dark rounded-pill px-5 shadow mt-3 mb-3">VALIDER</button>
+                    </div>
+                </form>
+                <!-- END PICTURE(S) -->
+
+                <!-- DESCRIPTION -->
+                <form action="#" class="col-12 col-lg-8">
+                    <div class="col-12 back-light d-flex flex-column align-items-center rounded-4 mt-4 mb-2">
+                        <p class="amatic-bold fs-2">Ajoutez une description à votre annonce</p>
+                        <textarea class="col-10 rounded-4 border-0 text-center pt-2 pb-2" name="description-offer" id="description-offer" cols="30" rows="10"></textarea>
+                        <button type="button" class="btn btn-lg btn-outline amatic-bold fs-3 text-grey back-dark rounded-pill px-5 shadow mt-3 mb-3">VALIDER</button>
+                    </div>
+                </form>
+                <!-- END DESCRIPTION -->
+
+                <!-- CHARACTERISTICS -->
+                <form action="#" class="col-12 col-lg-8">
+                    <div class="col-12 back-light d-flex flex-column align-items-center rounded-4 mt-4 mb-2">
+                        <p class="amatic-bold fs-2">Caratéristiques de votre produit</p>
+                        <textarea class="col-10 rounded-4 border-0 text-center pt-2 pb-2" name="description-offer" id="description-offer" cols="30" rows="10"></textarea>
+                        <button type="button" class="btn btn-lg btn-outline amatic-bold fs-3 text-grey back-dark rounded-pill px-5 shadow mt-3 mb-3">VALIDER</button>
+                    </div>
+                </form>
+                <!-- END CHARACTERISTICS -->
             </div>
         </div>
     </main>
@@ -82,33 +129,49 @@
 
     <!-- ######################################## Footer ######################################## -->
     <footer>
-        <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
-                        <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
-                        </li>
-                    </ul>
+        <div class="container-fluid back-pale amatic">
+            <div class="row">
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <a class="nav-link fs-2 text-dark" href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="#"><img src="/seeds_circle/public/assets/img/logoo-removebg.png" alt="Logo" width="70" height="80"></a>
+                        </div>
+                        <div class="col-12 d-flex">
+                            <div class="col-4">
+                                <hr class="decorative-line">
+                            </div>
+                            <div class="col-4">
+                                <a class="nav-link fs-2 text-dark" href="/seeds_circle/views/form.html">Rejoignez-nous</a>
+                            </div>
+                            <div class="col-4">
+                                <hr class="decorative-line">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- Icônes des réseaux sociaux -->
+                            <a href="https://www.facebook.com/LaManuFormation/?locale=fr_FR" class="text-decoration-none text-reset" target="_blank"><i class="fab fa-facebook-f fa-2x me-5"></i></a>
+                            <a href="https://www.instagram.com/lamanuformation/?hl=fr" class="text-decoration-none text-reset" target="_blank"><i class="fab fa-instagram fa-2x me-5"></i></a>
+                            <a href="https://twitter.com/lamanuformation?lang=fr" class="text-decoration-none text-reset" target="_blank"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-12 align-items-end d-flex flex-column">
+                            <a class="nav-link fs-2 text-dark" href="/seeds_circle/index.html">Acceuil</a>
+                            <a class="nav-link fs-2 text-dark" href="#">FAQ</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </footer>
     <!-- ######################################## Fin Footer ######################################## -->
     <script src="./../lib/bootstrap/bootstrap.bundle.min.js"></script>
