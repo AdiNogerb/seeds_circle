@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./../public/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/e0df362f98.js" crossorigin="anonymous"></script>
     <title>Seeds Circle</title>
 </head>
 <body id="body-event">
@@ -17,26 +18,26 @@
     <header>
         <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./../public/assets/img/logoo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#">Evenements</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#">Liste de produits</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#">Créer une annonce</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#" aria-disabled="true">Profil</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#" aria-disabled="true">Se déconnecter</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +70,7 @@
 
                 <!-- DIV CAROUSEL -->
                 <div class="col col-lg-8 d-flex justify-content-center">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide vw-50 vw-90" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./../public/assets/img/pexels-matheus-bertelli-3321791.jpg" class="d-block w-100" alt="Carousel Image 1">
@@ -98,7 +99,7 @@
         <div class="container-fluid pt-3">
             <div class="row justify-content-center">
                 <div class="col-8">
-                    <ul class="carousel-indicators">
+                    <ul class="carousel-indicators position-relative list-unstyled">
                         <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0"></li>
                         <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
                         <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
@@ -108,7 +109,8 @@
         </div>
         <!-- FIN DIV INDICATORS -->
         
-        <div class="container back-light rounded-4 montserrat text-center">
+        <!-- DIV DESCRIPTION -->
+        <div class="container back-light rounded-4 montserrat text-center mb-3">
             <div class="row">
                 <div class="col">
                     <p>Ce mercredi 13 mars 2024, un quatuor de web développeurs pleins de promesses, composé de Coraline, Christopher (bon anniv mec !), Valentin et Adrien, se défendront bec et ongles face à une horde de formateurs et directrices en tout genre.</p>
@@ -119,11 +121,39 @@
                 </div>
             </div>
         </div>
+        <!-- FIN DIV DESCRIPTION -->
     </main>
     <!-- ######################################## Fin Main ######################################## -->
 
     <!-- ######################################## Footer ######################################## -->
     <footer>
+        <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </footer>
     <!-- ######################################## Fin Footer ######################################## -->
     

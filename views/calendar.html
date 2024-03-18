@@ -17,26 +17,26 @@
     <header>
         <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./../public/assets/img/logoo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#">Evenements</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#">Liste de produits</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#">Créer une annonce</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#" aria-disabled="true">Profil</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-2" href="#" aria-disabled="true">Se déconnecter</a>
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +51,7 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- CONTAINER GAUCHE : CALENDRIER ET PROCHAIN EVENT -->
-                <div class="container-fluid col-12 col-lg-7 back-light pb-4">
+                <div class="container-fluid col-12 col-lg-7 back-light pb-4"> <!--DIV1-->
                     <!-- DATE ET FLECHES NAVIGATION -->
                     <div class="col-12 d-flex justify-content-center align-items-baseline text-grey">
                         <i class="fa-solid fa-arrow-left fa-xl"></i>
@@ -61,7 +61,7 @@
                     <!-- FIN DATE ET FLECHES NAVIGATION -->
 
                     <!-- CALENDRIER -->
-                    <div id="calendar" class="ps-0 ps-lg-3">
+                    <div id="calendar" class="ps-1 ps-lg-3">
                         <!-- CALENDRIER : JOURS -->
                         <div class="row">
                             <div class="cal-12 back-grey text-center rounded-top-5 border border-dark">
@@ -82,13 +82,13 @@
                         <div class="row">
                             <div class="back-grey text-center">
                                 <div class="row">
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>1</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>2</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>3</p></div>        
+                                    <div class="cal-day border-start border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>1</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>2</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>3</p></div>        
                                 </div>
                             </div>
                         </div>
@@ -98,13 +98,13 @@
                         <div class="row">
                             <div class="back-grey text-center">
                                 <div class="row">
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>4</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>5</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>6</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>7</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>8</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>9</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>10</p></div>        
+                                    <div class="cal-day border-start border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>4</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>5</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>6</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>7</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>8</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>9</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>10</p></div>        
                                 </div>
                             </div>
                         </div>
@@ -114,13 +114,13 @@
                         <div class="row">
                             <div class="back-grey text-center">
                                 <div class="row">
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>11</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>12</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>13</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>14</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>15</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>16</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>17</p></div>        
+                                    <div class="cal-day border-start border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>11</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>12</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>13</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>14</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>15</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>16</p></div>
+                                    <div class="cal-day border-end border-bottom border-dark d-flex align-items-center justify-content-center p-4"><p>17</p></div>        
                                 </div>
                             </div>
                         </div>
@@ -130,13 +130,13 @@
                         <div class="row">
                             <div class="back-grey text-center">
                                 <div class="row">
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>18</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>19</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>20</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>21</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>22</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>23</p></div>
-                                    <div class="cal-day border border-dark d-flex align-items-center justify-content-center p-4"><p>24</p></div>        
+                                    <div class="cal-day border-start border-end border-dark d-flex align-items-center justify-content-center p-4"><p>18</p></div>
+                                    <div class="cal-day border-end border-dark d-flex align-items-center justify-content-center p-4"><p>19</p></div>
+                                    <div class="cal-day border-end border-dark d-flex align-items-center justify-content-center p-4"><p>20</p></div>
+                                    <div class="cal-day border-end border-dark d-flex align-items-center justify-content-center p-4"><p>21</p></div>
+                                    <div class="cal-day border-end border-dark d-flex align-items-center justify-content-center p-4"><p>22</p></div>
+                                    <div class="cal-day border-end border-dark d-flex align-items-center justify-content-center p-4"><p>23</p></div>
+                                    <div class="cal-day border-end border-dark d-flex align-items-center justify-content-center p-4"><p>24</p></div>        
                                 </div>
                             </div>
                         </div>
@@ -161,11 +161,11 @@
                     <!-- FIN CALENDRIER -->
 
                     <!-- PROCHAIN EVENT -->
-                    <div class="row">
-                        <div class="col-12 back-dark mt-4 d-block d-lg-flex">
+                    <div class="row h-51">
+                        <div class="col-12 back-dark mt-4 d-block d-lg-flex justify-content-around">
                             <!-- PROCHAIN EVENT : IMAGE -->
-                            <div class="col-12 col-lg-6 pt-3">
-                                <img src="./../public/assets/img/meeting-1453895_1920.png" alt="">
+                            <div class="col-12 col-lg-6 pb-5 pt-2 d-flex img-next-event m-auto">
+                                <img src="./../public/assets/img/meeting-1453895_1920.png" class="img-fluid" alt="">
                             </div>
                             <!-- FIN PROCHAIN EVENT : IMAGE -->
 
@@ -179,7 +179,7 @@
                                 <!-- FIN PROCHAIN EVENT : TITRE -->
 
                                 <!-- PROCHAIN EVENT : DESCRIPTION -->
-                                <div class="col-12 back-light pt-3 pb-3">
+                                <div class="col-12 back-light pt-3 pb-3 mb-3 rounded-4">
                                     <div class="col-12  montserrat text-dark">
                                         <p>Ne manquez pas ce rendez-vous de la plus haute importance, ou nos apprentis développeurs défendront becs et ongles leur travail face à de terribles clients.</p>
                                         <p>Vous pourrez les retrouver autour d'un café après la pause de 15h15 à “La Manu Campus Amiens”</p>
@@ -197,9 +197,78 @@
                 </div>
                 <!-- FIN CONTAINER GAUCHE : CALENDRIER ET PROCHAIN EVENT -->
 
-                <div class="col-12 col-lg-5">
-                    <h2>Les prochains évènements</h2>
-                </div>       
+                <!-- CONTAINER DROIT : 3 EVENTS SUIVANTS -->                
+                <div id="left-div" class="container-fluid d-none d-lg-flex flex-column col-5 align-items-center justify-content-around"> <!--DIV2-->
+                    <h2 class="amatic text-grey">Les prochains évènements</h2>
+                    <!-- PREMIER EVENT -->
+                    <div class="row w-100">
+                        <div class="col-12 back-pale container-fluid pb-4 rounded-4">
+                            <h2 class="montserrat text-center">Troc Day</h2>
+                            <div class="row d-flex align-items-center">
+                                <!-- PREMIER EVENT : IMAGE -->
+                                <div class="col-5 d-flex  justify-content-center">
+                                    <img src="./../public/assets/img/pexels-nic-law-757432.jpg" class="img-fluid border border-2 border-dark img-event" alt="marché">
+                                </div>
+                                <!-- FIN PREMIER EVENT : IMAGE -->
+
+                                <!-- PREMIER EVENT : TEXTE ET BOUTON -->                                
+                                <div class="col-7 text-center">
+                                    <p>Retrouvez nos stands de dons et échanges de graines et plantes en tout genre au “Jardin du bout d'la rue” en plein quartier Elbeuf à Amiens.</p>
+                                    <p>Ouvert de 8h à 20h, animations pour toute la famille.</p>
+                                    <button class="btn back-dark amatic-bold text-grey shadow">EN SAVOIR PLUS</button>
+                                </div>
+                                <!-- FIN PREMIER EVENT : TEXTE ET BOUTON -->                                
+                            </div>    
+                        </div>
+                    </div>
+                    <!-- FIN PREMIER EVENT -->
+
+                    <!-- DEUXIEME EVENT -->                    
+                    <div class="row w-100">
+                        <div class="col-12 back-pale container-fluid pb-4 rounded-4 mt-3">
+                            <h2 class="montserrat text-center">Chasse aux graines</h2>
+                            <div class="row d-flex align-items-center">
+                                <!-- DEUXIEME EVENT : IMAGE -->
+                                <div class="col-5 d-flex  justify-content-center">
+                                    <img src="./../public/assets/img/pexels-eren-li-7169568.jpg" class="img-fluid border border-2 border-dark img-event" alt="enfant">
+                                </div>
+                                <!-- FIN DEUXIEME EVENT : IMAGE -->
+
+                                <!-- DEUXIEME EVENT : TEXTE ET BOUTON -->                                
+                                <div class="col-7 text-center">
+                                    <p>Nos membres du Tarn organisent samedi 30 avril une chasse aux oeufs dans le parc d'Albi, l'occasion de semer pour la biodiversité avec nos petits.</p>
+                                    <p>Atelier cuisine avec produits de nos récoltants.</p>
+                                    <button class="btn back-dark amatic-bold text-grey shadow">EN SAVOIR PLUS</button>
+                                </div>
+                                <!-- FIN DEUXIEME EVENT : TEXTE ET BOUTON -->                                
+                            </div>    
+                        </div>
+                    </div>
+                    <!-- FIN DEUXIEME EVENT -->    
+                    
+                    <!-- TROISIEME EVENT -->                    
+                    <div class="row w-100">
+                        <div class="col-12 back-pale container-fluid pb-4 rounded-4 mt-3">
+                            <h2 class="montserrat text-center">Concert</h2>
+                            <div class="row d-flex align-items-center">
+                                <!-- TROISIEME EVENT : IMAGE -->
+                                <div class="col-5 d-flex  justify-content-center">
+                                    <img src="./../public/assets/img/pexels-wendy-wei-1190297.jpg" class="img-fluid border border-2 border-dark img-event" alt="enfant">
+                                </div>
+                                <!-- FIN TROISIEME EVENT : IMAGE -->
+
+                                <!-- TROISIEME EVENT : TEXTE ET BOUTON -->                                
+                                <div class="col-7 text-center">
+                                    <p>La Manu Écologie se retrouve en bretagne pour un concert hors norme de Michel Sardou.</p>
+                                    <p>Première partie par “Les Ramoneurs de Menhirs”</p>
+                                    <button class="btn back-dark amatic-bold text-grey shadow">EN SAVOIR PLUS</button>
+                                </div>
+                                <!-- FIN TROISIEME EVENT : TEXTE ET BOUTON -->                                
+                            </div>    
+                        </div>
+                    </div>
+                    <!-- FIN TROISIEME EVENT -->    
+                </div>
             </div>
         </div>
     </main>
@@ -207,6 +276,33 @@
 
     <!-- ######################################## Footer ######################################## -->
     <footer>
+        <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </footer>
     <!-- ######################################## Fin Footer ######################################## -->
     <script src="./../lib/bootstrap/bootstrap.bundle.min.js"></script>

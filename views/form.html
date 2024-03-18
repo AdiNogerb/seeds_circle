@@ -1,13 +1,175 @@
 <!DOCTYPE html>
 <html lang="fr">
+<!-- ################################ début du head ################################ -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lib\bootstrap\bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <title>Seeds Circle</title>
 </head>
+<!-- ################################ fin du head ################################ -->
+
 <body>
-    
-    <script src="lib\bootstrap\bootstrap.bundle.min.js"></script>
+    <!-- ################################ début du header ################################ -->
+    <header>
+        <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ################################ fin du header ################################ -->
+    <main class="montserrat">
+        <div class="container-fluid back-light mt-0 pt-5 pb-5">
+            <div class="container back-pale rounded-4 pb-5">
+                <!-- ################################ début du formulaire pour les utilisateurs déjà inscrit ################################ -->
+                <form>
+                    <div class="row justify-content-center amatic-bold pt-4">
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-center">Déjà inscrit ?</h1>
+                        </div>
+                    </div>
+                    <!-- ################################ début zone mail ################################ -->
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label" for="email">Adresse mail* : </label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+                    <!-- ################################ fin zone mail ################################ -->
+                    <!-- ################################ début zone mot de passe ################################ -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label" for="password">Mot de passe* : </label>
+                            <input type="password" class="form-control mb-3" id="password" name="password" placeholder="motdepasse" required>
+                        </div>
+                    </div>
+                    <!-- ################################ fin zone mot de passe ################################ -->
+                    <div class="row justify-content-center fst-italic">
+                        <div class="col-12 col-md-6">
+                            <p>*champs obligatoires</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button type="button" class="btn btn-lg btn-outline amatic-bold fs-3 back-green rounded-pill px-5 shadow">VALIDER</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- ################################ fin du formulaire pour les utilisateurs déjà inscrit ################################ -->
+            </div>
+            <div class="container justify-content-center back-pale mt-5 pb-2 rounded-4">
+                <!-- ################################ début du formulaire pour les nouveaux utilisateurs ################################ -->
+                <form class="" novalidate>
+                    <div class="row justify-content-center amatic-bold pt-4">
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-center">Formulaire</h1>
+                        </div>
+                    </div>
+                    <!-- ################################ début zone nom ################################ -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <label for="validationServer01" class="form-label">Nom* : </label>
+                            <input type="text" class="form-control" id="validationServer01" value="Mark" required>
+                            <div class="valid-feedback">
+                                C'est bon!</div>
+                        </div>
+                    </div>
+                    <!-- ################################ fin zone nom ################################ -->
+                    <!-- ################################ début zone prénom ################################ -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <label for="validationServer02" class="form-label">Prénom : </label>
+                            <input type="text" class="form-control" id="validationServer02" value="Otto">
+                            <div class="valid-feedback">
+                                C'est bon!
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ################################ fin zone prénom ################################ -->
+                    <!-- ################################ début zone mail ################################ -->
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label" for="newEmail">Adresse mail* : </label>
+                            <input type="email" class="form-control" id="newEmail" name="email" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+                    <!-- ################################ fin zone mail ################################ -->
+                    <!-- ################################ début zone mot de passe ################################ -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label" for="newPassword">Mot de passe* : </label>
+                            <input type="password" class="form-control mb-3" id="newPassword" name="password" placeholder="motdepasse" required>
+                        </div>
+                    </div>
+                    <!-- ################################ fin zone mot de passe ################################ -->
+                    <!-- ################################ début zone téléphone ################################ -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <label for="phone">Téléphone : </label>
+                            <input type="text" name="phone" id="phone" class="form-control">
+                        </div>
+                    </div>
+                    <!-- ################################ fin zone téléphone ################################ -->
+                    
+                    <!-- ################################ début zone photo de profil ################################ -->
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-12 col-md-6">
+                            <div class="image pb-5">
+                                <label for="formFileLg" class="d-flex justify-content-center">Photo de profil :</label>
+                                <input class="form-control form-control-lg" id="formFileLg" type="file">
+                            </div>
+                        </div>
+                    </div>
+                    <!--################################ fin zone photo de profil ################################ -->
+                    <div class="row justify-content-center fst-italic">
+                        <div class="col-md-6">
+                            <p>*champs obligatoires</p>
+                        </div>
+                    </div>
+                    <!-- ################################ début zone bouton valider ################################ -->
+                    <div class="row">
+                        <div class="d-flex justify-content-center mb-3">
+                            <button type="button" class="btn btn-lg btn-outline amatic-bold fs-3 back-green rounded-pill px-5 shadow">VALIDER</button>
+                        </div>
+                    </div>
+                    <!-- ################################ fin zone bouton valider ################################ -->
+                </form>
+                <!-- ################################ fin du formulaire pour les nouveaux utilisateurs ################################ -->
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./../lib/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
