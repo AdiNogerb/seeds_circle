@@ -144,7 +144,6 @@
     font-optical-sizing: auto;
     font-weight: 1000;
     font-style: normal;
-
 }
 
 
@@ -152,8 +151,8 @@
 
 .white-line{
     border: none;
-        height: 3px; 
-        background-color: white; 
-        margin: 20px auto; 
-        width: 200px; 
+    height: 3px; 
+    background-color: white; 
+    margin: 20px auto; 
+    width: 200px; 
 }
