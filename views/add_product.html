@@ -18,7 +18,7 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/seeds_circle/index.html"><img class="w-50 h-50" src="/seeds_circle/public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <a class="navbar-brand" href="/seeds_circle/index.html"><img class="w-50 h-50" src="../public/assets/img/logoo-removebg.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -117,7 +117,160 @@
                 <form action="#" class="col-12 col-lg-8">
                     <div class="col-12 back-light d-flex flex-column align-items-center rounded-4 mt-4 mb-2">
                         <p class="amatic-bold fs-2">Caratéristiques de votre produit</p>
-                        <textarea class="col-10 rounded-4 border-0 text-center pt-2 pb-2" name="description-offer" id="description-offer" cols="30" rows="10"></textarea>
+                        <div class="col-12 d-flex">
+                            <div class="col-6 m-3">
+                                <!-- FORM : CATEGORIE -->
+                                <div class="col-12 d-flex flex-row mb-4">
+                                    <div class="col-6">
+                                        <p class="montserrat-bold">Catégorie :</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="category" id="category1" checked>
+                                            <label class="form-check-label" for="category1">
+                                                Intérieur
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="category" id="category2">
+                                            <label class="form-check-label" for="category2">
+                                                Extérieur
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIN FORM : CATEGORIE -->
+                                
+                                <!-- FORM : PET FRIENDLY -->
+                                <hr>
+                                <div class="col-12 d-flex flex-row mb-4">
+                                    <div class="col-6">
+                                        <p class="montserrat-bold">Pet Friendly :</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="pet-friendly" id="pet-friendly1" checked>
+                                            <label class="form-check-label" for="pet-friendly1">
+                                                OUI
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="pet-friendly" id="pet-friendly2">
+                                            <label class="form-check-label" for="pet-friendly2">
+                                                NON
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIN FORM : PET FRIENDLY -->
+        
+                                <!-- FORM : ÉTAT -->
+                                <hr>
+                                <div class="col-12 d-flex flex-row mb-4">
+                                    <div class="col-6">
+                                        <p class="montserrat-bold">État :</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="condition" id="condition1" checked>
+                                            <label class="form-check-label" for="condition1">
+                                                Graine
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="condition" id="condition2">
+                                            <label class="form-check-label" for="condition2">
+                                                Bulbe
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="condition" id="condition3">
+                                            <label class="form-check-label" for="condition3">
+                                                Semis
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIN FORM : ÉTAT -->
+        
+                                <!-- FORM : FROID -->
+                                <hr>
+                                <div class="col-12 d-flex flex-row mb-4">
+                                    <div class="col-6">
+                                        <p class="montserrat-bold">Résistance au froid :</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cold" id="cold1" checked>
+                                            <label class="form-check-label" for="cold1">
+                                                Rustique (jusque -15°)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cold" id="cold2">
+                                            <label class="form-check-label" for="cold2">
+                                                Semi-rustique (jusque 0°)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cold" id="cold3">
+                                            <label class="form-check-label" for="cold3">
+                                                Tendre (jusque 10°)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIN FORM : FROID -->
+                            </div>
+                            <div class="col-6 m-3">
+                                <!-- FORM : LUMIERE -->
+                                <div class="col-6">
+                                    <p class="montserrat-bold">Exposition lumineuse :</p>
+                                </div>
+                                <div class="col-6 m-auto d-flex flex-row mb-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="1">Très faible</option>
+                                        <option value="2">Faible</option>
+                                        <option value="3">Modérée</option>
+                                        <option value="4">Forte</option>
+                                        <option value="5">Très forte</option>
+                                    </select>
+                                </div>
+                                <!-- FIN FORM : LUMIERE -->
+        
+                                <!-- FORM : ARROSAGE -->
+                                <hr>
+                                <div class="col-6">
+                                    <p class="montserrat-bold">Arrosage :</p>
+                                </div>
+                                <div class="col-6 m-auto d-flex flex-row mb-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="1">Rare</option>
+                                        <option value="2">Peu fréquent</option>
+                                        <option value="3">Régulier</option>
+                                        <option value="4">Fréquent</option>
+                                        <option value="5">Très fréquent</option>
+                                    </select>
+                                </div>
+                                <!-- FIN FORM : ARROSAGE -->
+        
+                                <!-- FORM : SOL -->
+                                <hr>
+                                <div class="col-6">
+                                    <p class="montserrat-bold">Type de sol :</p>
+                                </div>
+                                <div class="col-6 m-auto d-flex flex-row mb-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="1">Argileux</option>
+                                        <option value="2">Calcaire</option>
+                                        <option value="3">Humifère</option>
+                                        <option value="4">Limoneux</option>
+                                        <option value="5">Sableux</option>
+                                    </select>
+                                </div>
+                                <!-- FIN FORM : SOL -->
+                            </div>
+                        </div>
                         <button type="button" class="btn btn-lg btn-outline amatic-bold fs-3 text-grey back-dark rounded-pill px-5 shadow mt-3 mb-3">VALIDER</button>
                     </div>
                 </form>
