@@ -106,10 +106,6 @@
     list-style: none;
 }
 
-.slide {
-    width: 50vw;
-}
-
 @media screen and (max-width: 990px) {
     .slide {
         width: 90vw;
@@ -141,12 +137,12 @@ ul {
     columns: 2;
 }
 
-.green-line{
+.green-line {
     border: none;
-    height: 3px; 
+    height: 3px;
     background-color: #075942;
-    margin: 20px auto; 
-    width: 50%; 
+    margin: 20px auto;
+    width: 50%;
 }
 
 /* END BODY */
