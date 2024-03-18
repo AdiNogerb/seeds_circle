@@ -147,3 +147,29 @@
     }
 }
 /* ################################### END PRODUCT LIST ################################### */
+
+/* ################################### HOME ################################### */
+#banner{
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+/* ################################### STYLES GENERAUX ################################### */
+.white-line{
+    border: none;
+    height: 3px; 
+    background-color: white; 
+    margin: 20px auto; 
+    width: 200px; 
+}
+
+.decorative-line {
+    border: none;
+    height: 3px; 
+    background-color: rgb(0, 0, 0); 
+    margin: 20px auto; 
+}
