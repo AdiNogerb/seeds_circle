@@ -73,6 +73,7 @@
 .text-dark{
     color: #075942;
 }
+
 /* ################################### END FONT STYLE ################################### */
 
 /* ################################### EVENT ################################### */
@@ -130,3 +131,29 @@
     background-size: cover;
 }
 /* END BODY */
+
+/* ################################### HOME ################################### */
+
+/* BANNIERE */
+
+#banner{
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+
+}
+
+
+
+
+.white-line{
+    border: none;
+        height: 3px; 
+        background-color: white; 
+        margin: 20px auto; 
+        width: 200px; 
+}
