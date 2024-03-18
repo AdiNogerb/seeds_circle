@@ -141,9 +141,12 @@ ul {
     columns: 2;
 }
 
-hr {
-    width: 50%;
+.green-line{
+    border: none;
+    height: 3px; 
     background-color: #075942;
+    margin: 20px auto; 
+    width: 50%; 
 }
 
 /* END BODY */
