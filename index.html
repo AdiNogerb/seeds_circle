@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lib\bootstrap\bootstrap.min.css">
-    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0df362f98.js" crossorigin="anonymous"></script>
     <title>Seeds Circle</title>
 </head>
 <body>
@@ -17,28 +18,29 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="w-50 h-50" src="/seeds_circle/public/assets/img/logoo-removebg.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
-                    <li class="nav-item">
-                        <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-2 text-dark" href="#" aria-disabled="true">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-2 text-dark" href="#" aria-disabled="true">Se déconnecter</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="/seeds_circle/public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#" >Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -54,7 +56,7 @@
                         </div>
                     </div>
                     <div class="col-5">
-                        <div class="d-flex h-100 align-items-end">
+                        <div class="d-flex h-100 align-items-end m-0">
                             <button class="btn shadow  mb-4 back-green rounded-3 amatic-bold">
                                 nous rejoindre
                             </button>
@@ -84,7 +86,7 @@
                     <h3 class="montserrat text-light">Lys</h3>
                 </div>
                 <div class="col-12 col-lg-7  text-center">
-                    <img src="./public/assets/img/Lys.jpg" class="rounded-4 img-fluid" id="lys"  alt="Lys">
+                    <img src="./public/assets/img/Lys.jpg" class="rounded-4 img-fluid"  alt="Lys">
                 </div>
                 <div class="col-12 col-lg-5 text-light text-center">
                     <div class="row">
@@ -119,7 +121,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-7  text-center">
-                    <img src="./public/assets/img/graines-tomates.png" class="rounded-4 img-fluid" id="lys"  alt="Lys">
+                    <img src="./public/assets/img/graines-tomates.png" class="rounded-4 img-fluid"  alt="Lys">
                 </div>
             </div>
             <!-- LIGNE BLANCHE -->
@@ -211,28 +213,39 @@
                 <div class="col-8 text-center">
                     <div class="row">
                         <div class="col-12">
-                            <img src="./public/assets/img/logoo-removebg.png" alt="Logo" width="60" height="70">
+                            <img src="./public/assets/img/logoo-removebg.png" alt="Logo" width="70" height="80">
+                        </div>
+                        <div class="col-12 d-flex">
+                            <div class="col-4">
+                                <hr class="decorative-line">
+                            </div>
+                            <div class="col-4">
+                                <a class="nav-link fs-2 text-dark" href="#">Rejoignez-nous</a>
+                            </div>
+                            <div class="col-4">
+                                <hr class="decorative-line">
+                            </div>
                         </div>
                         <div class="col-12">
-                            <a class="nav-link fs-2 text-dark" href="#">Rejoignez-nous</a>
-                        </div>
-                        <div class="col-12">
-                            RESEAUX SOCIAUX
+                            <!-- Icônes des réseaux sociaux -->
+                            <i class="fab fa-facebook-f fa-2x me-5"></i>
+                            <i class="fab fa-instagram fa-2x me-5"></i>
+                            <i class="fa-brands fa-x-twitter fa-2x"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-2">
-                    <div class="row justify-content-end">
-                        <div class="col-4">
-                            ACCEUIL
-                            FAQ
+                    <div class="row">
+                        <div class="col-12 align-items-end d-flex flex-column">
+                            <a class="nav-link fs-2 text-dark" href="#">Acceuil</a>
+                            <a class="nav-link fs-2 text-dark" href="#">FAQ</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="lib\bootstrap\bootstrap.bundle.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
