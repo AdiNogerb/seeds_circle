@@ -132,11 +132,16 @@
 
 /* ################################### CALENDAR ################################### */
 #calendar {
-    width: 98%;
+    width: 100%;
 }
 
 .cal-day {
     width: 14.28%;
+}
+@media screen and (max-width : 370px){
+    .cal-day{
+        width: 10%
+    }
 }
 
 .img-event{
