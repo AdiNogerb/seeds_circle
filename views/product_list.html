@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link fs-2 text-dark" href="../views/calendar.html">Évènements</a>
+                            <a class="nav-link fs-2 text-dark" href="../views/calendar.html">Evenements</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-2 text-dark" href="../views/product_list.html">Liste de produits</a>
@@ -52,18 +52,21 @@
             <!-- HAUT : BARRE DE RECHERCHE ET TITRE -->
             <div class="row">
                 <!-- BARRE DE RECHERCHE -->
-                <div class="col-12 back-green pt-3 pb-3 d-flex flex-column align-items-center">
+                <div class="col-12 back-green pt-3 pb-3 d-flex justify-content-center">
                     <div class="col-10 col-lg-6 back-grey rounded-5">
                         <form class="d-flex" role="search">
                             <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             <input class="form-control back-grey rounded-5 border-0 montserrat-italic" type="search" placeholder="Graines de tomate, romarin, hêtre..." aria-label="Search">
                         </form>                
                     </div>
-                    <div class="col-12 col-lg-10 d-flex justify-content-end back-green">
-                        <button class="btn border-0 text-grey text-decoration-underline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Voir les filtres</button>
-                    </div>    
                 </div>
                 <!-- FIN BARRE DE RECHERCHE -->
+
+                <!-- BOUTON OFFCANVA -->
+                <div class="col-12 d-flex justify-content-end d-lg-none back-green">
+                    <button class="btn border-0 text-grey text-decoration-underline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Voir les filtres</button>
+                </div>
+                <!-- FIN BOUTON OFFCANVA -->
 
                 <!-- TITRE -->
                 <div class="col-12 back-dark rounded-4 rounded-top-0">
@@ -76,7 +79,7 @@
             <!-- LES CARDS ET LA MODAL DESKTOP -->
             <div class="row">
                 <!-- DIV CARDS -->
-                <div class="col-12 px-5">
+                <div class="col-12 col-lg-11">
                     <div class="row d-flex justify-content-around">
                         <!-- CARD 1 -->
                         <div class="col-12 col-lg-6 col-xxl-4 p-5">
@@ -103,7 +106,7 @@
                                 </div>
                                 <div class="card-body montserrat">
                                   <h2 class="card-title">Laurier</h2>
-                                  <p class="card-text">C'est super joli et en plus ca fait rire les oiseaux, ça fait chanter les abeilles, ça chasse les nuages et fait briller le soleil.</p>
+                                  <p class="card-text">C'est super jolie et en plus ca fait rire les oiseaux, ça fait chanter les abeilles, ça chasse les nuages et fait briller le soleil.</p>
                                   <div class="col-12 d-flex justify-content-end">
                                       <a href="../views/product.html" class="text-dark">Voir le produit</a>
                                   </div>
@@ -182,6 +185,12 @@
                     </div>
                 </div>
                 <!-- FIN DIV CARDS -->
+
+                <!-- BOUTON OFFCANVA -->
+                <div class="d-none d-lg-block col-lg-1">
+                    <button class="btn border-0 text-grey text-decoration-underline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Voir les filtres</button>
+                </div>
+                <!-- FIN BOUTON OFFCANVA -->
 
                 <!-- OFFCANVA -->
                 <div class="offcanvas offcanvas-end back-green montserrat" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -299,22 +308,6 @@
                             </div>
                             <!-- FIN FORM : FROID -->
 
-                            <!-- FORM : TYPE -->
-                            <hr>
-                            <div class="col-6">
-                                <p class="montserrat-bold">Type de plante :</p>
-                            </div>
-                            <div class="col-6 m-auto d-flex flex-row mb-4">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option value="1">Herbacée</option>
-                                    <option value="2">Arbuste</option>
-                                    <option value="3">Arbre</option>
-                                    <option value="4">Grimpante</option>
-                                    <option value="5">Bulbeuse</option>
-                                </select>
-                            </div>
-                            <!-- FIN FORM : TYPE -->
-                            
                             <!-- FORM : LUMIERE -->
                             <hr>
                             <div class="col-6">
