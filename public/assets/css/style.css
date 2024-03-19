@@ -100,6 +100,12 @@
         height: 200px;
     }
 }
+/* ###################################### PROFIL */
+@media screen and (min-width: 992px) {
+    #profilName{
+        width: 20rem;
+    }
+}
 
 .carousel-indicators {
     position: relative;
@@ -107,11 +113,11 @@
 }
 
 @media screen and (max-width: 992px){
-    .vw-90{
-        width: 90vw;
+    #profilName{
+        width: 19rem;
     }
 }
-/* END CAROUSEL */
+/* ###################################### */
 
 /* BODY */
 #body-event{

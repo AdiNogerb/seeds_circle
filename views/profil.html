@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./../public/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/e0df362f98.js" crossorigin="anonymous"></script>
+    <title>Seeds Circle</title>
+</head>
+<body class="back-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg back-pale amatic border-bottom border-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="w-50 h-50" src="./../public/assets/img/logoo-removebg.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4 text-center w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Evenements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Liste de produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Créer une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Container principal -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- côté gauche en dekstop -->
+                <div class="col-12 col-lg-5">
+                    <!-- ROW pour profil -->
+                    <div class="row back-light rounded-bottom-4">
+                        <!-- IMG PROFIL  -->
+                        <div class="col-4 ms-4 my-3 py-2 my-lg-1 ps-lg-4 text-center">
+                            <img class="img-thumbnail rounded-circle p-0 border-0" src="./../public/assets/img/personna-Jane-Doe.png" alt="Doe Jane">
+                        </div>
+                        <!-- NAME PROFIL  -->
+                        <div class="col-7 d-flex align-items-center justify-content-sm-around text-center text-light">
+                            <div class="back-dark rounded-pill rounded-lg fs-2" id="profilName">
+                                <h1>
+                                    DOE Jane
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN ROW  -->
+                    <!-- ROW pour ce qu'il y a en dessous de profil : boutons, intérêts, besoins -->
+                    <div class="row">
+                        <!-- COL pour les boutons -->
+                        <div class="col-12 my-4 d-flex justify-content-around amatic-bold">
+                            <button class="btn p-2 px-5 back-green rounded-pill fw-bold fs-2 shadow">
+                                + Produit
+                            </button>
+                            <button class="btn p-2 px-5 back-green rounded-pill fw-bold fs-2 shadow">
+                                + Besoin
+                            </button>
+                        </div>
+                        <!-- COL pour les intérêts  -->
+                        <div class="col-12 pt-3 back-light text-center rounded-bottom-4">
+                            <h2 class="amatic-bold">Intérêts</h2>
+                            <p class="montserrat fs-5">
+                                Jardinage urbain, design d'intérieur,développement durable
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="pt-3 text-center text-light">
+                                <h2>Besoins</h2>
+                            </div>
+                        </div>
+                        <!-- COL BESOINS -->
+                        <div class="col-12 d-flex flex-column justify-content-around">
+                            <div class="row">
+                                <!-- 1ER BESOIN -->
+                                <div class="col-6 text-center mt-2 text-light">
+                                    <div class="d-flex flex-column justify-content-around">
+                                        <h3 class="amatic">Graines de tournesol</h3>
+                                        <p class="mb-4 fs-5 montserrat">
+                                            Fleur soleil
+                                        </p>
+                                        <div class="d-flex justify-content-around mt-2">
+                                            <i class="fa-solid fa-pencil fa-xl"></i>
+                                            <i class="fa-regular fa-trash-can fa-xl"></i>
+                                        </div>
+                                    </div>
+                                    </div>
+                                <!-- 1ERE IMG -->
+                                <div class="col-6">
+                                    <div>
+                                        <img class="img-fluid my-2 rounded" src="../public/assets/img/sunflower-seeds.jpg" alt="Image Besoin graines tournesol">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3 mb-lg-2">
+                                <!-- 2EME BESOIN -->
+                                <div class="col-6 text-center mt-2 text-light">
+                                    <h3 class="amatic">Bananes</h3>
+                                    <p class="mb-4 montserrat fs-5">
+                                        Garder la banane
+                                    </p>
+                                    <div class="d-flex justify-content-around">
+                                        <i class="fa-solid fa-pencil fa-xl"></i>
+                                        <i class="fa-regular fa-trash-can fa-xl"></i>
+                                    </div>
+                                </div>
+                                <!-- 2EME IMG -->
+                                <div class="col-6">
+                                    <div>
+                                        <img class="img-fluid my-2 rounded" src="../public/assets/img/banane.jpg" alt="Image Besoin bananes sur une table">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- 3EME BESOIN -->
+                                <div class="col-6">
+                                    <div class="text-center text-light">
+                                        <h3 class="amatic">Fraises</h3>
+                                        <p class="mb-4 fs-5 montserrat">
+                                            Manger avec précaution
+                                        </p>
+                                        <div class="d-flex justify-content-around mb-4">
+                                            <i class="fa-solid fa-pencil fa-xl"></i>
+                                            <i class="fa-regular fa-trash-can fa-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3EME IMG -->
+                                <div class="col-6">
+                                    <div>
+                                        <img class="img-fluid my-2 rounded" src="../public/assets/img/fresh-strawberries-wooden-table.jpg" alt="Image Besoin fraises fraiches sur table en bois">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN COL BESOINS -->
+                    </div>
+                    <!-- FIN ROW -->
+                </div>
+                <!-- fin côté gauche dekstop -->
+                <!-- Séparation -->
+                <hr class="white-line d-lg-none">
+                <!-- côté droit dekstop -->
+                <div class="col-12 col-lg-7 d-flex flex-column justify-content-around align-items-center">
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <div class="text-center text-light">
+                                <h2>Produits</h2>
+                            </div>
+                        </div>
+                        <!-- 1ER PRODUIT -->
+                            <div class="col-12 d-flex justify-content-around">
+                                <!-- 1ERE IMG -->
+                                <div class="col-6 col-lg-5">
+                                    <img class="img-fluid my-2 rounded col-12" src="../public/assets/img/roses.jpg" alt="Image Produit roses par centaines">
+                                </div>
+                                <!-- TEXT -->
+                                <div class="col-6 col-lg-5">
+                                    <div class="text-center mt-2 text-light">
+                                        <h3 class="amatic">Roses</h3>
+                                        <p class="mb-4 fs-5 montserrat">
+                                            Plus rose que le rose
+                                        </p>
+                                        <div class="d-flex justify-content-around mt-lg-5">
+                                            <i class="fa-solid fa-pencil fa-xl"></i>
+                                            <i class="fa-regular fa-trash-can fa-xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIN TEXT -->
+                            </div>
+                        <!-- FIN 1ER PRODUIT -->
+                    </div>
+                    <hr class="white-line d-none d-lg-inline">
+                    <div class="row">
+                        <!-- 2EME PRODUIT -->
+                        <div class="col-12 d-flex justify-content-around my-2">
+                            <!-- 2EME IMG -->
+                            <div class="col-6 col-lg-5">
+                                <div>
+                                    <img class="img-fluid my-2 rounded" src="../public/assets/img/arbre.jpg" alt="Image Produit arbre dans plaine">
+                                </div>
+                            </div>
+                            <!-- TEXT -->
+                            <div class="col-6 col-lg-5">
+                                <div class="text-center mt-2 text-light">
+                                    <h3 class="amatic">ARBRE</h3>
+                                    <p class="mb-4 fs-5 montserrat">
+                                        Idéale pour balançoire
+                                    </p>
+                                    <div class="d-flex justify-content-around mt-lg-5">
+                                        <i class="fa-solid fa-pencil fa-xl"></i>
+                                        <i class="fa-regular fa-trash-can fa-xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIN TEXT -->
+                        </div>
+                        <!-- FIN 2EME PRODUIT -->
+                    </div>
+                    <hr class="white-line d-none d-lg-inline">
+                    <div class="row">
+                        <!-- 3EME PRODUIT -->
+                        <div class="col-12 d-flex justify-content-around my-4">
+                            <!-- 3EME IMG -->
+                            <div class="col-6 col-lg-5">
+                                <div>
+                                    <img class="img-fluid rounded" src="../public/assets/img/tulipes-orange.jpg" alt="Image Produit Tulipes Orange">
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-5">
+                                <div class="text-center mt-2 text-light">
+                                    <h3 class="amatic">Tulipes</h3>
+                                    <p class="mb-4 fs-5 montserrat">
+                                        Une couleur aube
+                                    </p>
+                                    <div class="d-flex justify-content-around mt-lg-5">
+                                        <i class="fa-solid fa-pencil fa-xl"></i>
+                                        <i class="fa-regular fa-trash-can fa-xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN 3EME PRODUIT -->
+                    </div>
+                </div>
+                <!-- fin côté droit dekstop -->
+            </div>
+        </div>
+        <!-- Fin Container -->
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid back-pale amatic">
+            <div class="row">
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <a class="nav-link fs-2 text-dark" href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../public/assets/img/logoo-removebg.png" alt="Logo" width="70" height="80">
+                        </div>
+                        <div class="col-12 d-flex">
+                            <div class="col-4">
+                                <hr class="decorative-line">
+                            </div>
+                            <div class="col-4">
+                                <a class="nav-link fs-2 text-dark" href="#">Rejoignez-nous</a>
+                            </div>
+                            <div class="col-4">
+                                <hr class="decorative-line">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- Icônes des réseaux sociaux -->
+                            <i class="fab fa-facebook-f fa-2x me-5"></i>
+                            <i class="fab fa-instagram fa-2x me-5"></i>
+                            <i class="fa-brands fa-x-twitter fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-12 align-items-end d-flex flex-column">
+                            <a class="nav-link fs-2 text-dark" href="#">Acceuil</a>
+                            <a class="nav-link fs-2 text-dark" href="#">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+    <script src="../lib/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
