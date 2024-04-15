@@ -106,6 +106,9 @@
     #profilName{
         width: 20rem;
     }
+    #map{
+        height: 250px;
+    }
 }
 
 .carousel-indicators {
@@ -116,6 +119,9 @@
 @media screen and (max-width: 992px){
     #profilName{
         width: 19rem;
+    }
+    #map{
+        height: 500px;
     }
 }
 /* ###################################### */
