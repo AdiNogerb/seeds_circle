@@ -107,8 +107,13 @@
         width: 20rem;
     }
     #map{
-        height: 250px;
+        height: 80vh;
     }
+}
+
+.spinner-border{
+    width: 3rem; 
+    height: 3rem;
 }
 
 .carousel-indicators {
@@ -121,7 +126,7 @@
         width: 19rem;
     }
     #map{
-        height: 500px;
+        height: 50vh;
     }
 }
 /* ###################################### */
@@ -189,6 +194,11 @@
     font-optical-sizing: auto;
     font-weight: 1000;
     font-style: normal;
+}
+
+#spinner {
+    z-index: 1000;
+    opacity: 75%;
 }
 /* ################################### END HOME ################################### */
 

@@ -80,7 +80,7 @@
                     </div>
                     <div class="col-12 col-lg-6 col-xxl-4 d-flex justify-content-center ">
                         <button class="my-4 btn shadow btn-lg back-green rounded-5 amatic-bold fs-1">
-                            <a href="#map" class="text-decoration-none text-reset text-nowrap">Trouver des graines</a>
+                            <a href="#producersMap" class="text-decoration-none text-reset text-nowrap">Trouver des graines</a>
                         </button>
                     </div>
                 </div>
@@ -176,12 +176,16 @@
                 <div class="row justify-content-center">
                     <!-- PRODUCTEURS PRÈS DE CHEZ VOUS -->
                     <div class="col-12 col-lg-6">
-                        <h2 class="amatic-bold text-light pt-5 mb-5 text-center">Producteurs près de chez vous</h2>
-                        
-                        <div id="map" class="rounded-3">
-
+                        <h2 id="producersMap" class="amatic-bold text-light my-5 text-center">Producteurs près de chez vous</h2>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center p-0 rounded shadow" id="map">
+                        <div class="w-100 h-100 bg-secondary d-flex justify-content-center align-items-center m-0 p-0" id="spinner">
+                            <div class="spinner-border text-light" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>                         
                         </div>
                     </div>
+                    
                     <!-- TEMOIGNAGE ET REUSSITES -->
                     <div class="col-12 text-center">
                         <h2 class="amatic-bold text-light pt-5">Témoignages et réussites</h2>
