@@ -43,12 +43,41 @@ getSellers = (lat, lng) => {
         // Boucle sur le tableau d'objet pour récupérer latitude et longitude des commercants
         datas.items.forEach(item => {
             let adresseOperateur = item.adressesOperateurs;
+            let name = item.denominationcourante;
+            let mail = item.email;
             let adresseObj = adresseOperateur[0];
+            let site = item.siteWebs;
             let latSell = adresseObj.lat;
             let lngSell = adresseObj.long;
-            var marker = L.marker([latSell, lngSell], {icon: greenIcon}).addTo(map).bindPopup("I am a green leaf.");
+            let place = adresseObj.lieu;
+            let postal = adresseObj.codePostal;
+            let city = adresseObj.ville;
+            if (mail != null && site.length != 0) {
+                let siteObj = site[0];
+                let siteUrl = siteObj.url;                
+                var marker = L.marker([latSell, lngSell], {icon: greenIcon}).addTo(map).bindPopup(`
+                <p class="fw-bold">${name}</p>
+                <p>${place}, ${postal}, ${city}</p>
+                <p><a href="mailto: ${mail}">${mail}</a></p>
+                <a href="${siteUrl}" target="_blank">${siteUrl}</a>`);
+            } else if (mail != null && site.length == 0){
+                var marker = L.marker([latSell, lngSell], {icon: greenIcon}).addTo(map).bindPopup(`
+                <p class="fw-bold">${name}</p>
+                <p>${place}, ${postal}, ${city}</p>
+                <a href="mailto: ${mail}">${mail}</a>`);
+            } else if (mail == null && site.length != 0){
+                let siteObj = site[0];
+                let siteUrl = siteObj.url;                
+                var marker = L.marker([latSell, lngSell], {icon: greenIcon}).addTo(map).bindPopup(`
+                <p class="fw-bold">${name}</p>
+                <p>${place}, ${postal}, ${city}</p>
+                <a href="${siteUrl}" target="_blank">${siteUrl}</a>`);
+            } else {
+                var marker = L.marker([latSell, lngSell], {icon: greenIcon}).addTo(map).bindPopup(`
+                <p class="fw-bold">${name}</p>
+                <p>${place}, ${postal}, ${city}</p>`);
+            }
         });
-
         spinner.classList.add('d-none');
     })
 }
