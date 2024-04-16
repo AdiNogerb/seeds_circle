@@ -22,6 +22,7 @@
 .back-dark {
     background-color: #075942;
 }
+
 /* ################################### END BACKGROUND COLOR ################################### */
 
 /* ################################### FONT STYLE ################################### */
@@ -90,7 +91,8 @@
 .carousel-item {
     height: 400px;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .carousel-item {
         height: 300px;
     }
@@ -101,11 +103,17 @@
         height: 200px;
     }
 }
+
 /* ###################################### PROFIL */
 @media screen and (min-width: 992px) {
-    #profilName{
+    #profilName {
         width: 20rem;
     }
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
 }
 
 .carousel-indicators {
@@ -113,20 +121,32 @@
     list-style: none;
 }
 
-@media screen and (max-width: 992px){
-    #profilName{
+@media screen and (max-width: 992px) {
+    #profilName {
         width: 19rem;
     }
 }
+
+#map {
+    height: 80vh;
+    width: 90vw;
+}
+
+#spinner {
+    z-index: 1000;
+    opacity: 75%;
+}
+
 /* ###################################### */
 
 /* BODY */
-#body-event{
+#body-event {
     background-image: url(./../img/bg-dark.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 /* END BODY */
 /* ################################### END EVENT ################################### */
 
@@ -138,44 +158,49 @@
 .cal-day {
     width: 14.28%;
 }
-@media screen and (max-width : 370px){
-    .cal-day{
+
+@media screen and (max-width : 370px) {
+    .cal-day {
         width: 10%
     }
 }
 
-.img-event{
+.img-event {
     max-height: 200px;
 }
 
-.img-next-event{
+.img-next-event {
     max-width: 390px;
 }
 
-.h-51{
+.h-51 {
     height: 51%;
 }
+
 /* ################################### END CALENDAR ################################### */
 
 /* ################################### PRODUCT LIST ################################### */
-.card-img-top{
+.card-img-top {
     max-height: 325px;
     width: auto;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .card-img-top {
         height: 300px;
     }
 }
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 576px) {
     .card-img-top {
         height: 200px;
     }
 }
+
 /* ################################### END PRODUCT LIST ################################### */
 
 /* ################################### HOME ################################### */
-#banner{
+#banner {
     background-image: url(../img/banner.png);
     background-position: right;
     background-size: cover;
@@ -185,7 +210,6 @@
     height: 70vh;
     font-style: normal;
 }
-
 
 /* @media screen and (max-width: 576px){
     .banner-title{
@@ -199,7 +223,7 @@
     width: 15%;
 }
 
-.ul-product{
+.ul-product {
     columns: 2;
 }
 
@@ -210,32 +234,33 @@
     margin: 20px auto;
     width: 50%;
 }
+
 /* ################################### END PRODUCT ################################### */
 
 /* ################################### STYLES GENERAUX ################################### */
-.white-line{
+.white-line {
     border: none;
-    height: 3px; 
-    background-color: white; 
-    margin: 20px auto; 
-    width: 200px; 
+    height: 3px;
+    background-color: white;
+    margin: 20px auto;
+    width: 200px;
 }
 
 .decorative-line {
     border: none;
-    height: 3px; 
-    background-color: rgb(0, 0, 0); 
-    margin: 20px auto; 
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px auto;
 }
 
-.body-dark{
+.body-dark {
     background-image: url(../img/backgroundTest.png);
     background-position: center;
     background-size: contain;
 
 }
 
-.body-light{
+.body-light {
     background-image: url(../img/backgroundTestLight.png);
     background-position: center;
     background-size: contain;
