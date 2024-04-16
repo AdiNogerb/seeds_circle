@@ -83,8 +83,8 @@
                     </div>
                     <!-- début boutons contacter et profil -->
                     <div class="d-flex justify-content-around py-4">
-                        <button class="btn rounded-pill back-dark amatic-bold fs-3 border-0 shadow text-light px-5 py-2">CONTACTER</button>
-                        <button class="btn rounded-pill back-dark amatic-bold fs-3 border-0 shadow text-light px-5 py-2">PROFIL</button>
+                        <button class="btn rounded-pill back-dark amatic-bold fs-3 border-0 shadow text-light px-5 py-2"><a href="mailto:jeanjeandu80@mail.com" class="text-decoration-none text-reset">CONTACTER</a></button>
+                        <button class="btn rounded-pill back-dark amatic-bold fs-3 border-0 shadow text-light px-5 py-2"><a href="./profil.html" class="text-decoration-none text-reset">PROFIL</a></button>
                     </div>
                     <!-- fin boutons contacter et profil -->
                 </div>
@@ -95,8 +95,8 @@
                         <div class="container montserrat d-flex flex-column pt-3 pb-5">
                             <div
                                 class="product-picture-man d-flex justify-content-center align-items-center montserrat-italic">
-                                <img src="../public/assets/img/old-man.jpg" class="rounded-5 mx-4" id="product-picture-man" alt="picture-man-black-and-white">
-                                <p>Proposé par Jean</p>
+                                <img src="../public/assets/img/old-man.jpg" class="rounded-circle mx-4" id="product-picture-man" alt="picture-man-black-and-white">
+                                <p>Proposé par <a href="./profil.html">Jean</a></p>
                             </div>
                         </div>
                         <!-- début description texte produit -->
@@ -136,8 +136,29 @@
                 <div class="col-2">
                     <div class="row">
                         <div class="col-4">
-                            <a class="nav-link fs-2 text-dark" href="#">Contact</a>
+                            <a class="nav-link fs-2 text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contact</a>
                         </div>
+                        <!-- ######################################## MODAL ######################################## -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content montserrat back-pale">
+                                <div class="modal-header">
+                                <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Contact</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <p class="fw-semibold">LaManuEcology</p>
+                                <p>238 Earls Ct Rd, London SW 9AA</p>
+                                <p>+44 20 7123 4567</p>
+                                <p>contact@lamanuecology.com</p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ######################################## MODAL END ######################################## -->
                     </div>
                 </div>
                 <div class="col-8 text-center">
@@ -168,7 +189,7 @@
                 <div class="col-2">
                     <div class="row">
                         <div class="col-12 align-items-end d-flex flex-column">
-                            <a class="nav-link fs-2 text-dark" href="../index.html">Acceuil</a>
+                            <a class="nav-link fs-2 text-dark" href="../index.html">Accueil</a>
                             <a class="nav-link fs-2 text-dark" href="#">FAQ</a>
                         </div>
                     </div>

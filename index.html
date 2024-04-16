@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
-    <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="./public/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,12 +55,12 @@
                 <div class="row text-light">
                     <div class="col-7">
                         <div class="p-1 p-lg-5 col-lg-6">
-                            <h1 class="montserrat fw-bolder fs-1">SEMEZ LA DIVERSITE, CULTIVEZ LA COMMUNAUTE</h1>
+                            <h1 class="montserrat fw-bolder fs-1 mt-5 pt-5">SEMEZ LA DIVERSITE, CULTIVEZ LA COMMUNAUTE</h1>
                         </div>
                     </div>
                     <div class="col-5">
                         <div class="d-flex h-100 align-items-end m-0">
-                            <button class="btn shadow  mb-4 back-green rounded-3 amatic-bold fs-5">
+                            <button class="btn shadow  mb-4 back-green rounded-3 amatic-bold fs-5 mb-5">
                                 <a  href="./views/form.html" class="text-decoration-none text-reset" >nous rejoindre</a>
                             </button>
                         </div>
@@ -178,14 +175,13 @@
                     <div class="col-12 col-lg-6">
                         <h2 id="producersMap" class="amatic-bold text-light my-5 text-center">Producteurs près de chez vous</h2>
                     </div>
-                    <div class="col-12 d-flex justify-content-center align-items-center p-0 rounded shadow" id="map">
-                        <div class="w-100 h-100 back-grey d-flex justify-content-center align-items-center m-0 p-0" id="spinner">
-                            <div class="spinner-border text-dark" role="status">
+                    <div class="col-10 d-flex justify-content-center align-items-center p-0" id="map">
+                        <div class="w-100 h-100 bg-secondary d-flex justify-content-center align-items-center m-0 p-0" id="spinner">
+                            <div class="spinner-border text-light" style="width: 3rem; height: 3rem;" role="status">
                                 <span class="visually-hidden">Loading...</span>
                             </div>                         
                         </div>
                     </div>
-                    
                     <!-- TEMOIGNAGE ET REUSSITES -->
                     <div class="col-12 text-center">
                         <h2 class="amatic-bold text-light pt-5">Témoignages et réussites</h2>
@@ -278,10 +274,8 @@
     </footer>
     <!-- ######################################## Fin Footer ######################################## -->
     <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
-    <!-- Script Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./public/assets/js/script.js"></script>
 </body>
 </html>
 

@@ -65,18 +65,18 @@
                         <!-- FIN DATE ET FLECHES NAVIGATION -->
     
                         <!-- CALENDRIER -->
-                        <div id="calendar" class="ps-1 ps-lg-3 montserrat">
+                        <div id="calendar" class="ps-1 pe-2 ps-lg-3 montserrat">
                             <!-- CALENDRIER : JOURS -->
                             <div class="row">
                                 <div class="cal-12 back-grey text-center rounded-top-5 border border-dark">
                                     <div class="row">
-                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4"><p class="d-none d-lg-block">Lundi</p></div>
-                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4"><p class="d-none d-lg-block">Mardi</p></div>
-                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4"><p class="d-none d-lg-block">Mercredi</p></div>
-                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4"><p class="d-none d-lg-block">Jeudi</p></div>
-                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4"><p class="d-none d-lg-block">Vendredi</p></div>
-                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4"><p class="d-none d-lg-block">Samedi</p></div>
-                                        <div class="col cal-day border-dark d-flex align-items-center justify-content-center p-lg-4"><p class="d-none d-lg-block">Dimanche</p></div>        
+                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4 d-none d-lg-block montserrat-bold"><p class="">Lun.</p></div>
+                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4 d-none d-lg-block montserrat-bold"><p class="">Mar.</p></div>
+                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4 d-none d-lg-block montserrat-bold"><p class="">Mer.</p></div>
+                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4 d-none d-lg-block montserrat-bold"><p class="">Jeu.</p></div>
+                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4 d-none d-lg-block montserrat-bold"><p class="">Ven.</p></div>
+                                        <div class="col cal-day border-end border-dark d-flex align-items-center justify-content-center p-lg-4 d-none d-lg-block montserrat-bold"><p class="">Sam.</p></div>
+                                        <div class="col cal-day border-dark d-flex align-items-center justify-content-center p-lg-4 d-none d-lg-block montserrat-bold"><p class="">Dim.</p></div>        
                                     </div>
                                 </div>
                             </div>
@@ -184,12 +184,12 @@
                                 <!-- FIN PROCHAIN EVENT : TITRE -->
 
                                 <!-- PROCHAIN EVENT : DESCRIPTION -->
-                                <div class="col-12 back-light pt-3 pb-3 mb-3 rounded-4">
-                                    <div class="col-12  montserrat text-dark">
+                                <div class="col-12 back-light px-3 mb-3 rounded-4">
+                                    <div class="col-12 montserrat text-black">
                                         <p>Ne manquez pas ce rendez-vous de la plus haute importance, ou nos apprentis développeurs défendront becs et ongles leur travail face à de terribles clients.</p>
                                         <p>Vous pourrez les retrouver autour d'un café après la pause de 15h15 à “La Manu Campus Amiens”</p>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 pb-3">
                                         <button class="btn back-pale amatic-bold shadow "><a href="../views/event.html" class="text-decoration-none text-reset">EN SAVOIR PLUS</a></button>
                                     </div>
                                 </div>
@@ -286,8 +286,29 @@
                 <div class="col-2">
                     <div class="row">
                         <div class="col-4">
-                            <a class="nav-link fs-2 text-dark" href="#">Contact</a>
+                            <a class="nav-link fs-2 text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contact</a>
                         </div>
+                        <!-- ######################################## MODAL ######################################## -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content montserrat back-pale">
+                                <div class="modal-header">
+                                <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Contact</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <p class="fw-semibold">LaManuEcology</p>
+                                <p>238 Earls Ct Rd, London SW 9AA</p>
+                                <p>+44 20 7123 4567</p>
+                                <p>contact@lamanuecology.com</p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ######################################## MODAL END ######################################## -->
                     </div>
                 </div>
                 <div class="col-8 text-center">
@@ -300,7 +321,7 @@
                                 <hr class="decorative-line">
                             </div>
                             <div class="col-4">
-                                <a class="nav-link fs-2 text-dark" href="../views/form.html">Rejoignez-nous</a>
+                                <a class="nav-link fs-2 text-dark" href="./views/form.html">Rejoignez-nous</a>
                             </div>
                             <div class="col-4">
                                 <hr class="decorative-line">
@@ -318,7 +339,7 @@
                 <div class="col-2">
                     <div class="row">
                         <div class="col-12 align-items-end d-flex flex-column">
-                            <a class="nav-link fs-2 text-dark" href="../index.html">Acceuil</a>
+                            <a class="nav-link fs-2 text-dark" href="./index.html">Accueil</a>
                             <a class="nav-link fs-2 text-dark" href="#">FAQ</a>
                         </div>
                     </div>
