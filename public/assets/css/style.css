@@ -207,7 +207,7 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1000;
-    height: 70vh;
+    /* height: 70vh; */
     font-style: normal;
 }
 
