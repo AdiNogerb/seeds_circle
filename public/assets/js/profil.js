@@ -1,8 +1,8 @@
 const map = document.getElementById('map');
 const spinner = document.getElementById('spinner');
 const greenIcon = L.icon({
-    iconUrl: './public/assets/img/leaf-green.png',
-    shadowUrl: './public/assets/img/leaf-shadow.png',
+    iconUrl: '../public/assets/img/leaf-green.png',
+    shadowUrl: '../public/assets/img/leaf-shadow.png',
     iconSize:     [38, 95], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
