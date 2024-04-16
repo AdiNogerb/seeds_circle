@@ -1,0 +1,35 @@
+{
+    "short_name ": "Seeds",
+    "name": "Seeds-Circle",
+    "icons": [
+        {
+            "src": "./ic_launcher48.png",
+            "sizes": "48x48",
+            "type": "image/ico"
+        },
+        {
+            "src": "./ic_launcher72.png",
+            "sizes": "72x72",
+            "type": "image/ico"
+        },
+        {
+            "src": "./ic_launcher96.png",
+            "sizes": "96x96",
+            "type": "image/ico"
+        },
+        {
+            "src": "./ic_launcher144.png",
+            "sizes": "144x144",
+            "type": "image/ico"
+        }
+    ],
+    "related_applications": [
+        {
+          "platform": "web"
+        },
+        {
+          "platform": "play",
+          "url": "https://adrienbregon.alwaysdata.net/index.html"
+        }
+      ]
+    }
