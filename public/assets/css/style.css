@@ -141,7 +141,7 @@
 
 /* BODY */
 #body-event {
-    background-image: url(./../img/bg-dark.jpg);
+    background-image: url(./../img/bg-dark.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -201,13 +201,13 @@
 
 /* ################################### HOME ################################### */
 #banner {
-    background-image: url(../img/banner.png);
+    background-image: url(../img/banner.avif);
     background-position: right;
     background-size: cover;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1000;
-    /* height: 70vh; */
+    height: 70vh;
     font-style: normal;
 }
 
