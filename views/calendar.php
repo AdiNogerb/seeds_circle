@@ -1,38 +1,36 @@
 <?php
 // Variables
-$days = [1=>'LUN', 2=>'MAR', 3=>'MER', 4=>'JEU', 5=>'VEN', 6=>'SAM', 7=>'DIM'];
-$months = [1=>'Janvier', 2=>'Février', 3=>'Mars', 4=>'Avril', 5=>'Mai', 6=>'Juin', 7=>'Juillet', 8=>'Août', 9=>'Septembre', 10=>'Octobre', 11=>'Novembre', 12=>'Décembre'] ;
-$actualYear = date('Y'); 
-$actualMonth = date('n'); 
-$actualDay = date('j'); 
-$divCount = 1;
-$eventsString = file_get_contents('../events.json');
-$eventsList = json_decode($eventsString, true);
-$events = $eventsList['evenements'];
-$eventsSort = $events;
-usort($eventsSort, function($a, $b) {
-    $dateA = strtotime($a['date']);
-    $dateB = strtotime($b['date']);
-    return $dateA - $dateB;
-});
-$eventDay = false;
+    $days = [1=>'LUN', 2=>'MAR', 3=>'MER', 4=>'JEU', 5=>'VEN', 6=>'SAM', 7=>'DIM'];
+    $months = [1=>'Janvier', 2=>'Février', 3=>'Mars', 4=>'Avril', 5=>'Mai', 6=>'Juin', 7=>'Juillet', 8=>'Août', 9=>'Septembre', 10=>'Octobre', 11=>'Novembre', 12=>'Décembre'] ;
+    $actualYear = date('Y'); 
+    $actualMonth = date('n'); 
+    $actualDay = date('j'); 
+    $divCount = 1;
+    $eventsString = file_get_contents('../events.json');
+    $eventsList = json_decode($eventsString, true);
+    $events = $eventsList['evenements'];
+    $eventsSort = $events;
+    usort($eventsSort, function($a, $b) {
+        $dateA = strtotime($a['date']);
+        $dateB = strtotime($b['date']);
+        return $dateA - $dateB;
+    });
+    $eventDay = false;
 
 // Condition selon choix utilisateur
-if (!empty($_GET['month']) && !empty($_GET['year'])) {
-    $chosenMonth = $_GET['month'];
-    $chosenYear = $_GET['year'];
-} else {
-    $chosenMonth = $actualMonth;
-    $chosenYear = $actualYear;
-}
+    if (!empty($_GET['month']) && !empty($_GET['year'])) {
+        $chosenMonth = $_GET['month'];
+        $chosenYear = $_GET['year'];
+    } else {
+        $chosenMonth = $actualMonth;
+        $chosenYear = $actualYear;
+    }
 
 // Création des variables premier jour du mois (chiffre), nombre de jour dans le mois
-$firstDay = new DateTime("$chosenYear-$chosenMonth-01");
-$firstDayWeek = $firstDay->format('N');
-$daysNumberInMonth = cal_days_in_month(CAL_GREGORIAN, $chosenMonth, $chosenYear);
-
+    $firstDay = new DateTime("$chosenYear-$chosenMonth-01");
+    $firstDayWeek = $firstDay->format('N');
+    $daysNumberInMonth = cal_days_in_month(CAL_GREGORIAN, $chosenMonth, $chosenYear);
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -217,6 +215,7 @@ $daysNumberInMonth = cal_days_in_month(CAL_GREGORIAN, $chosenMonth, $chosenYear)
                             }?>
                         </div><?php 
                     }?>
+                    <p class="text-white fst-italic">Cliquez sur un évènement pour en savoir plus</p>
                     <!-- FIN CASES CALENDRIER -->
 
                     <!-- PROCHAIN EVENT -->
@@ -239,7 +238,7 @@ $daysNumberInMonth = cal_days_in_month(CAL_GREGORIAN, $chosenMonth, $chosenYear)
                                             <p id="descriptionEvent" class="mt-4"></p>
                                         </div>
                                         <div class="col-12 pb-3">
-                                            <button class="btn back-pale amatic-bold shadow "><a href="../views/event.html" class="text-decoration-none text-reset">EN SAVOIR PLUS</a></button>
+                                            <a href="../views/event.html" class="btn back-dark amatic-bold shadow text-decoration-none text-reset">EN SAVOIR PLUS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -304,7 +303,7 @@ $daysNumberInMonth = cal_days_in_month(CAL_GREGORIAN, $chosenMonth, $chosenYear)
                             <div class="row w-100 pb-3">
                                 <div class="col-12 back-pale container-fluid pb-4 rounded-4">
                                     <h2 class="montserrat pt-3 text-center text-decoration-underline"><?=$eventsSort[$key+2]['titre']?></h2>
-                                    <h3 class="montserrat text-center fs-4"><?=$eventsSort[$key+2]['date']?></h3>
+                                    <h3 class="montserrat text-center fs-4"><?=$date3->format('j').' '.$months[$date3->format('n')].' '.$date3->format('Y')?></h3>
                                     <h3 class="montserrat text-center fs-4"><?=$eventsSort[$key+2]['ville']?></h3>
                                     <div class="row d-flex align-items-center justify-content-center">
                                         <div class="col-10 text-center">
