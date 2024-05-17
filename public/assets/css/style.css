@@ -151,30 +151,30 @@
 /* ################################### END EVENT ################################### */
 
 /* ################################### CALENDAR ################################### */
-#calendar {
-    width: 100%;
+.calendar-case{
+    flex: 1;
+    min-height: 60px;
 }
 
-.cal-day {
-    width: 14.28%;
+.event-case{
+    font-size: 80%;
 }
-
-@media screen and (max-width : 370px) {
-    .cal-day {
-        width: 10%
+@media screen and (max-width: 500px){
+    .event-case{
+        font-size: 60%;
     }
+}
+
+#map{
+    max-height: 300px;
+}
+
+span[data-id]:hover{
+    cursor: pointer;
 }
 
 .img-event {
     max-height: 200px;
-}
-
-.img-next-event {
-    max-width: 390px;
-}
-
-.h-51 {
-    height: 51%;
 }
 
 /* ################################### END CALENDAR ################################### */
